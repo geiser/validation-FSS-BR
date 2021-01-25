@@ -1,0 +1,155 @@
+---
+title: "Factor Analysis in Short Version of FSS-2"
+author: Geiser Chalco Challco <geiser@alumni.usp.br>
+output:
+  github_document: default
+  word_document: default
+  html_document: default
+  pdf_document:
+    keep_tex: true
+fontsize: 10pt
+---
+
+* Data: [data/raw-data.csv](data/raw-data.csv)
+* Source code: [02-factor-analysis-short-FSS.Rmd](02-factor-analysis-short-FSS.Rmd)
+
+```{r setup, include=FALSE, echo=FALSE}
+wants <- c('readr','dplyr','psych','lavaan','ggraph','semPlot','robustHD','GPArotation','parameters')
+has <- wants %in% rownames(installed.packages())
+if (any(!has)) install.packages(wants[!has])
+
+knitr::opts_chunk$set(echo = TRUE)
+defaultW <- getOption("warn")
+options(warn = -1)
+```
+
+## Loading libs
+
+```{r,message=FALSE}
+library(GPArotation)
+library(readr)
+library(dplyr)
+library(psych)
+library(lavaan)
+library(ggraph)
+library(semPlot)
+library(MVN)
+library(daff)
+library(robustHD)
+library(parameters)
+```
+
+## Loading data
+
+* As in the identification of [careless](00-careless.md), there was only 2 data, we decided to use all the raw data.
+
+```{r}
+raw_data <- read.csv("data/raw-data.csv")
+dat <- select(raw_data, starts_with("gender"), starts_with("age"), starts_with("Q"))
+datItem <- select(dat, starts_with("Q"))
+```
+
+## Confirmatory Factorial Analisis (CFA)
+
+Setting a list of models in the list variable "mdls" to be tested using lavaan SEM syntax.
+
+```{r}
+mdls <- c('original short FSS-2'='
+FSS =~ Q19+Q29+Q12+Q22+Q32+Q24+Q34+Q17+Q36
+', 
+'alternative short FSS-2'='
+FSS =~ Q10+Q11+Q30+Q4+Q23+Q24+Q7+Q26+Q27
+',
+'alternative min short FSS-2'='
+FSS =~ Q19+Q11+Q30+Q4+Q32+Q24+Q7+Q17+Q36
+')
+```
+
+Perform CFA in all the defined models and obtain the fit measurements in the variable "*cfa_results*"
+
+```{r echo=FALSE}
+cfa_results <- lapply(mdls, FUN = function(x) {
+  cfa <- cfa(x, data=datItem, std.lv=T, estimator="WLSMV", meanstructure=T)
+  fit <- round(fitMeasures(cfa), 3)
+  fit <- c(
+    fit
+    , 'rmsea.ci' = paste0('[',fit['rmsea.ci.lower'],'; ',fit['rmsea.ci.upper'],']')
+    , 'rmsea.ci.scaled' = paste0('[',fit['rmsea.ci.lower.scaled'],'; ',fit['rmsea.ci.upper.scaled'],']')
+    , 'rmsea.ci.robust' = paste0('[',fit['rmsea.ci.lower.robust'],'; ',fit['rmsea.ci.upper.robust'],']')
+    , 'cfi.obs' = ifelse(fit[['cfi']] < 0.85, 'unacceptable fit', NA)
+    , 'cfi.obs.scaled' = ifelse(fit[['cfi.scaled']] < 0.85, 'unacceptable fit', NA)
+    , 'cfi.obs.robust' = ifelse(fit[['cfi.robust']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs' = ifelse(fit[['tli']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs.scaled' = ifelse(fit[['tli.scaled']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs.robust' = ifelse(fit[['tli.robust']] < 0.85, 'unacceptable fit', NA)
+    , 'rmsea.obs' = ifelse(fit[['rmsea']] > 0.10, 'poor fit', NA)
+    , 'rmsea.obs.scaled' = ifelse(fit[['rmsea.scaled']] > 0.10, 'poor fit', NA)
+    , 'rmsea.obs.robust' = ifelse(fit[['rmsea.robust']] > 0.10, 'poor fit', NA)
+  )
+  list(cfa = cfa, fit = fit)
+})
+```
+
+Print the basic fit measures for all the CFA models.
+
+```r
+do.call(rbind, lapply(cfa_results, FUN = function(x) {
+  x$fit[c('chisq','df','cfi','tli','rmsea','rmsea.ci','cfi.obs','tli.obs','rmsea.obs')]
+}))
+```
+
+```{r echo=FALSE}
+knitr::kable(do.call(rbind, lapply(cfa_results, FUN = function(x) {
+  x$fit[c('chisq','df','cfi','tli','rmsea','rmsea.ci','cfi.obs','tli.obs','rmsea.obs')]
+})))
+```
+
+
+Calculate fit measures for all the CFA models.
+
+```r
+t(do.call(rbind, lapply(cfa_results, FUN = function(x) x$fit)))
+```
+
+```{r, echo=FALSE}
+knitr::kable(t(do.call(rbind, lapply(cfa_results, FUN = function(x) x$fit))))
+```
+
+
+### Summarize and draw diagrams of CFA models without negative observations
+
+Select CFA models without negative observations
+
+```{r}
+(mdls <- names(cfa_results)[sapply(cfa_results, FUN = function(x) {
+  all(is.na(x$fit[c('cfi.obs','tli.obs','rmsea.obs')]))
+})])
+```
+
+Print summaries and diagrams for the CFA models without negative observations
+
+```{r, fig.height=8, fig.width=8}
+for (mdl in mdls) {
+  cat(mdl,"\n"); summary(cfa_results[[mdl]]$cfa, standardized = T)
+  semPaths(cfa_results[[mdl]]$cfa,  "std"
+           , curvePivot = T, layout = "circle", rotation = 1, fade = F, intercepts = F, residuals = F
+           , sizeLat = 4, sizeLat2 = 3, sizeMan = 4, sizeMan2 = 2, curvature = 2.5, esize = 1.5, asize = 1.5
+           , edge.label.cex = 0.35, edge.label.position = 0.5)
+}
+```
+
+### Summarize comparison between CFA models without negative observations
+
+```{r}
+combn(mdls, 2, simplify = F, FUN = function(x) {
+  lavTestLRT(cfa_results[[x[1]]]$cfa, cfa_results[[x[2]]]$cfa, model.names=x)
+})
+```
+
+> *Note*: Significant difference Pr(>Chisq) indicates that:
+> The model1 fits the gathered data significantly different (better/worse) than the model2
+
+
+```{r include=FALSE}
+options(warn = defaultW)
+```

@@ -1,0 +1,73 @@
+---
+title: "Identifing and Removing Careless"
+author: Geiser Chalco Challco <geiser@alumni.usp.br>
+output:
+  html_document: default
+  word_document: default
+  github_document: default
+  pdf_document:
+    keep_tex: true
+fontsize: 10pt
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+wants <- c('digest', 'readxl', 'dplyr','careless','car')
+has <- wants %in% rownames(installed.packages())
+if (any(!has)) install.packages(wants[!has])
+
+knitr::opts_chunk$set(echo = TRUE)
+defaultW <- getOption("warn")
+options(warn = -1)
+```
+
+## Loading libs
+
+```{r,message=FALSE}
+library(readxl)
+library(readr)
+library(digest)     # biblioteca para anonimizar dados
+library(dplyr)      # biblioteca para manipular data.frames
+library(careless)   # biblioteca para tratamento de respostas descuidadas
+library(car)        # biblioteca para graficar Boxplots com identificação de pontos
+```
+
+## Loading data
+
+* Raw data: [data/raw-data.csv](data/raw-data.csv)
+
+```{r}
+raw_data <- read.csv("data/raw-data.csv")
+data <- select(raw_data, starts_with("gender"), starts_with("age"), starts_with("Q"))
+```
+
+## Identifying careless
+
+```{r}
+dataItem <- select(data, starts_with("Q"))
+outliers <- Boxplot(longstring(dataItem), main = "Boxplot do Longstring") 
+```
+
+```{r}
+careless <- cbind(resp=outliers, longstring=longstring(dataItem)[outliers], data[outliers,])
+data.table::setorder(careless, -longstring)
+head(careless)
+```
+
+* posições 223 e 53 são considerados careless
+
+## Saving results
+
+* saving careless responses in file: [data/careless.csv](data/careless.csv)
+* saving data without careless in file: [data/data-woc.csv](data/data-woc.csv)
+
+```{r}
+careless <- careless[c(1,2),]
+write_csv(careless, 'data/careless.csv')
+
+data_woc <- data[-c(223,53),]
+write_csv(data_woc, 'data/data-woc.csv')
+```
+
+```{r include=FALSE}
+options(warn = defaultW)
+```

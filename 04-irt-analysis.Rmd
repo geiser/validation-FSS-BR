@@ -1,0 +1,475 @@
+---
+title: "Item Response Theory Analysis"
+author: Geiser Chalco Challco <geiser@alumni.usp.br>
+output:
+  github_document: default
+  word_document: default
+  html_document: default
+  pdf_document:
+    keep_tex: true
+fontsize: 10pt
+---
+
+* Data: [data/raw-data.csv](data/raw-data.csv)
+* Source code: [04-irt-analysis.Rmd](04-irt-analysis.Rmd)
+
+```{r setup, include=FALSE, echo=FALSE}
+wants <- c('readr','dplyr','psych','lavaan','foreign','sirt','mirt','TAM','sfsmisc','unix')
+has <- wants %in% rownames(installed.packages())
+if (any(!has)) install.packages(wants[!has])
+
+knitr::opts_chunk$set(echo = TRUE)
+defaultW <- getOption("warn")
+options(warn = -1)
+```
+
+## Loading libs
+
+```{r,message=FALSE}
+library(readr)
+library(dplyr)
+library(sirt)
+library(mirt)
+library(TAM)
+```
+
+## Loading data
+
+* As in the identification of [careless](00-careless.md), there was only 2 data, we decided to use all the raw data.
+
+```{r}
+raw_data <- read.csv("data/raw-data.csv")
+dat <- select(raw_data, starts_with("gender"), starts_with("age"), starts_with("Q"))
+datItem <- select(dat, starts_with("Q")) - 1
+```
+
+## Checking assumptions 
+
+### Evaluating normality
+
+```{r}
+lavmodel <- '
+LAVAAN MODEL:
+  F1 =~ Q1+Q10+Q19+Q28
+  F2 =~ Q2+Q11+Q20+Q29
+  F3 =~ Q3+Q12+Q21+Q30
+  F4 =~ Q4+Q13+Q22+Q31
+  F5 =~ Q5+Q14+Q23+Q32
+  F6 =~ Q6+Q15+Q24+Q33
+  F7 =~ Q7+Q16+Q25+Q34
+  F8 =~ Q8+Q17+Q26+Q35
+  F9 =~ Q9+Q18+Q27+Q36
+  F1 ~~ F2
+  F1 ~~ F3
+  F1 ~~ F4
+  F1 ~~ F5
+  F1 ~~ F6
+  F1 ~~ F7
+  F1 ~~ F8
+  F1 ~~ F9
+  F2 ~~ F3
+  F2 ~~ F4
+  F2 ~~ F5
+  F2 ~~ F6
+  F2 ~~ F7
+  F2 ~~ F8
+  F2 ~~ F9
+  F3 ~~ F4
+  F3 ~~ F5
+  F3 ~~ F6
+  F3 ~~ F7
+  F3 ~~ F8
+  F3 ~~ F9
+  F4 ~~ F5
+  F4 ~~ F6
+  F4 ~~ F7
+  F4 ~~ F8
+  F4 ~~ F9
+  F5 ~~ F6
+  F5 ~~ F7
+  F5 ~~ F8
+  F5 ~~ F9
+  F6 ~~ F7
+  F6 ~~ F8
+  F6 ~~ F9
+  F7 ~~ F8
+  F7 ~~ F9
+  F8 ~~ F9
+'
+#cfa_mod <- cfa(lavmodel, data=datItem, std.lv=T, estimator="WLSMV", meanstructure=T)
+#cfa.extract.itempars(cfa_mod)
+#IRTLikelihood.cfa(datItem, cfa_mod)
+
+unix::rlimit_all()
+#unix::rlimit_as(1e24)
+#unix::rlimit_memlock(max=1e12)
+
+
+res <- tamaan(lavmodel, datItem, tam.method = 'tam.mml.2pl', control=list(maxiter=20))
+
+
+tam(res$resp)
+
+res <- tam2mirt(mod)
+
+memory.size(T)
+
+res1 <- lavaanify.IRT(lavmodel, data = datItem)
+
+res1 <- lavaan2mirt(datItem, lavmodel, poly.itemtype="graded", verbose=TRUE, method  = 'MCEM', est.mirt = T )
+mirt.wrapper.coef(res1$mirt)
+```
+
+### Performing Kaiser, Meyer, Olkin (KMO) Measure of Sampling Adequacy 
+
+```{r}
+itemplot(nine_mirt,2,type='infotrace')
+```
+
+### Performing Bartlett's test of sphericity
+
+We don't use *bartlett.test()* because it doesn't perform test of sphericity *bartlett.test()* is a function that performs test of homogeneity of variances
+
+```{r}
+(check_sphericity(datItem)) 
+```
+
+As there is not normality in the results, we decided to use the mean- and variance-adjusted weighted least squares (WLSMV) estimator, based on that WLSMV does not assume normal variables and it is a robust estimator developed to model categorical or ordered data.
+
+* Brown, T. (2006). Confirmatory factor analysis for applied research. New York: Guildford.
+* Proitsi, P., et al. (2009). A multiple indicators multiple causes (MIMIC) model of behavioural and psychological symptoms in dementia (BPSD). Neurobiology Aging. doi:10.1016/j.neurobiolaging.2009.03.005
+
+## Parallel Factorial Analysis
+
+```{r}
+#(pfa_mod <- fa.parallel(datItem, fm = 'wls', fa = 'fa', cor='mixed'))
+```
+
+## Exploratory Factor Analysis (EFA) 
+
+Firstly, we run the EFA with the factor numbers sugested by the parallel factorial analysis, and using the "mixed" correlation that combines tetrachorics, polychorics, Pearsons, biserials, and polyserials methods to estimate the correlation matrix.
+
+```{r}
+#efa_mod <- fa(datItem, nfactors = pfa_mod$nfact, cor = 'mixed', fm='wls')
+efa_mod <- fa(datItem, nfactors = 8, cor = 'mixed', fm = 'wls')
+fa.sort(efa_mod)
+```
+
+```{r echo=FALSE,include=FALSE}
+fa.graph(efa_mod, out.file='efa_mod.dot' , main='', sort=T, digits=2, size = c(10,20))
+DOT::dot(read_file('efa_mod.dot'), file = "efa_mod.svg")
+```
+
+```{r}
+fa.diagram(efa_mod, main='', sort = T, digits = 2)
+```
+
+* Detailed diagram of EFA in SVG format: [**efa_mod.svg**](efa_mod.svg)
+
+
+## Confirmatory Factorial Analisis (CFA)
+
+Setting a list of models in the list variable "mdls" to be tested using lavaan SEM syntax.
+
+```{r}
+mdls <- c('unidimensional'='
+FSS =~ Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10+Q11+Q12+Q13+Q14+Q15+Q16+Q17+Q18+Q19+Q20+Q21+Q22+Q23+Q24+Q25+Q26+Q27+Q28+Q29+Q30+Q31+Q32+Q33+Q34+Q35+Q36
+', 
+'efa model'='
+F1 =~ Q23+Q24+Q32+Q33+Q4+Q5+Q15
+F2 =~ Q13+Q21+Q22+Q31+Q3+Q6+Q12
+F3 =~ Q9+Q19+Q35
+F4 =~ Q8+Q18+Q28+Q34
+F5 =~ Q7+Q16+Q25
+F6 =~ Q2+Q11+Q14+Q20+Q29
+F7 =~ Q17+Q26+Q27
+F8 =~ Q30+Q36+Q1+Q10
+
+F1 ~~ F2
+F1 ~~ F5
+F1 ~~ F7
+F1 ~~ F8
+
+F5 ~~ F8
+
+F7 ~~ F8
+',
+'nine-factor model'='
+F1 =~ Q1+Q10+Q19+Q28
+F2 =~ Q2+Q11+Q20+Q29
+F3 =~ Q3+Q12+Q21+Q30
+F4 =~ Q4+Q13+Q22+Q31
+F5 =~ Q5+Q14+Q23+Q32
+F6 =~ Q6+Q15+Q24+Q33
+F7 =~ Q7+Q16+Q25+Q34
+F8 =~ Q8+Q17+Q26+Q35
+F9 =~ Q9+Q18+Q27+Q36
+
+F1 ~~ F2
+F1 ~~ F3
+F1 ~~ F4
+F1 ~~ F5
+F1 ~~ F6
+F1 ~~ F7
+F1 ~~ F8
+F1 ~~ F9
+
+F2 ~~ F3
+F2 ~~ F4
+F2 ~~ F5
+F2 ~~ F6
+F2 ~~ F7
+F2 ~~ F8
+F2 ~~ F9
+
+F3 ~~ F4
+F3 ~~ F5
+F3 ~~ F6
+F3 ~~ F7
+F3 ~~ F8
+F3 ~~ F9
+
+F4 ~~ F5
+F4 ~~ F6
+F4 ~~ F7
+F4 ~~ F8
+F4 ~~ F9
+
+F5 ~~ F6
+F5 ~~ F7
+F5 ~~ F8
+F5 ~~ F9
+
+F6 ~~ F7
+F6 ~~ F8
+F6 ~~ F9
+
+F7 ~~ F8
+F7 ~~ F9
+
+F8 ~~ F9
+',
+'2nd order model'='
+F1 =~ Q1+Q10+Q19+Q28
+F2 =~ Q2+Q11+Q20+Q29
+F3 =~ Q3+Q12+Q21+Q30
+F4 =~ Q4+Q13+Q22+Q31
+F5 =~ Q5+Q14+Q23+Q32
+F6 =~ Q6+Q15+Q24+Q33
+F7 =~ Q7+Q16+Q25+Q34
+F8 =~ Q8+Q17+Q26+Q35
+F9 =~ Q9+Q18+Q27+Q36
+
+FSS =~ F1+F2+F3+F4+F5+F6+F7+F8+F9
+',
+'bi-factor model'='
+g =~ Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10+Q11+Q12+Q13+Q14+Q15+Q16+Q17+Q18+Q19+Q20+Q21+Q22+Q23+Q24+Q25+Q26+Q27+Q28+Q29+Q30+Q31+Q32+Q33+Q34+Q35+Q36
+F1 =~ Q1+Q10+Q19+Q28
+F2 =~ Q2+Q11+Q20+Q29
+F3 =~ Q3+Q12+Q21+Q30
+F4 =~ Q4+Q13+Q22+Q31
+F5 =~ Q5+Q14+Q23+Q32
+F6 =~ Q6+Q15+Q24+Q33
+F7 =~ Q7+Q16+Q25+Q34
+F8 =~ Q8+Q17+Q26+Q35
+F9 =~ Q9+Q18+Q27+Q36
+
+g ~~ 0*F1
+g ~~ 0*F2
+g ~~ 0*F3
+g ~~ 0*F4
+g ~~ 0*F5
+g ~~ 0*F6
+g ~~ 0*F7
+g ~~ 0*F8
+g ~~ 0*F9
+
+F1 ~~ 0*F2
+F1 ~~ 0*F3
+F1 ~~ 0*F4
+F1 ~~ 0*F5
+F1 ~~ 0*F6
+F1 ~~ 0*F7
+F1 ~~ 0*F8
+F1 ~~ 0*F9
+
+F2 ~~ 0*F3
+F2 ~~ 0*F4
+F2 ~~ 0*F5
+F2 ~~ 0*F6
+F2 ~~ 0*F7
+F2 ~~ 0*F8
+F2 ~~ 0*F9
+
+F3 ~~ 0*F4
+F3 ~~ 0*F5
+F3 ~~ 0*F6
+F3 ~~ 0*F7
+F3 ~~ 0*F8
+F3 ~~ 0*F9
+
+F4 ~~ 0*F5
+F4 ~~ 0*F6
+F4 ~~ 0*F7
+F4 ~~ 0*F8
+F4 ~~ 0*F9
+
+F5 ~~ 0*F6
+F5 ~~ 0*F7
+F5 ~~ 0*F8
+F5 ~~ 0*F9
+
+F6 ~~ 0*F7
+F6 ~~ 0*F8
+F6 ~~ 0*F9
+
+F7 ~~ 0*F8
+F7 ~~ 0*F9
+
+F8 ~~ 0*F9
+',
+'uncorrelated model'='
+F1 =~ Q1+Q10+Q19+Q28
+F2 =~ Q2+Q11+Q20+Q29
+F3 =~ Q3+Q12+Q21+Q30
+F4 =~ Q4+Q13+Q22+Q31
+F5 =~ Q5+Q14+Q23+Q32
+F6 =~ Q6+Q15+Q24+Q33
+F7 =~ Q7+Q16+Q25+Q34
+F8 =~ Q8+Q17+Q26+Q35
+F9 =~ Q9+Q18+Q27+Q36
+
+F1 ~~ 0*F2
+F1 ~~ 0*F3
+F1 ~~ 0*F4
+F1 ~~ 0*F5
+F1 ~~ 0*F6
+F1 ~~ 0*F7
+F1 ~~ 0*F8
+F1 ~~ 0*F9
+
+F2 ~~ 0*F3
+F2 ~~ 0*F4
+F2 ~~ 0*F5
+F2 ~~ 0*F6
+F2 ~~ 0*F7
+F2 ~~ 0*F8
+F2 ~~ 0*F9
+
+F3 ~~ 0*F4
+F3 ~~ 0*F5
+F3 ~~ 0*F6
+F3 ~~ 0*F7
+F3 ~~ 0*F8
+F3 ~~ 0*F9
+
+F4 ~~ 0*F5
+F4 ~~ 0*F6
+F4 ~~ 0*F7
+F4 ~~ 0*F8
+F4 ~~ 0*F9
+
+F5 ~~ 0*F6
+F5 ~~ 0*F7
+F5 ~~ 0*F8
+F5 ~~ 0*F9
+
+F6 ~~ 0*F7
+F6 ~~ 0*F8
+F6 ~~ 0*F9
+
+F7 ~~ 0*F8
+F7 ~~ 0*F9
+
+F8 ~~ 0*F9
+')
+```
+
+Perform CFA in all the defined models and obtain the fit measurements in the variable "*cfa_results*"
+
+```{r}
+cfa_results <- lapply(mdls, FUN = function(x) {
+  cfa <- cfa(x, data=datItem, std.lv=T, estimator="WLSMV", meanstructure=T)
+  fit <- round(fitMeasures(cfa), 3)
+  fit <- c(
+    fit
+    , 'rmsea.ci' = paste0('[',fit['rmsea.ci.lower'],'; ',fit['rmsea.ci.upper'],']')
+    , 'rmsea.ci.scaled' = paste0('[',fit['rmsea.ci.lower.scaled'],'; ',fit['rmsea.ci.upper.scaled'],']')
+    , 'rmsea.ci.robust' = paste0('[',fit['rmsea.ci.lower.robust'],'; ',fit['rmsea.ci.upper.robust'],']')
+    , 'cfi.obs' = ifelse(fit[['cfi']] < 0.85, 'unacceptable fit', NA)
+    , 'cfi.obs.scaled' = ifelse(fit[['cfi.scaled']] < 0.85, 'unacceptable fit', NA)
+    , 'cfi.obs.robust' = ifelse(fit[['cfi.robust']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs' = ifelse(fit[['tli']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs.scaled' = ifelse(fit[['tli.scaled']] < 0.85, 'unacceptable fit', NA)
+    , 'tli.obs.robust' = ifelse(fit[['tli.robust']] < 0.85, 'unacceptable fit', NA)
+    , 'rmsea.obs' = ifelse(fit[['rmsea']] > 0.10, 'poor fit', NA)
+    , 'rmsea.obs.scaled' = ifelse(fit[['rmsea.scaled']] > 0.10, 'poor fit', NA)
+    , 'rmsea.obs.robust' = ifelse(fit[['rmsea.robust']] > 0.10, 'poor fit', NA)
+  )
+  list(cfa = cfa, fit = fit)
+})
+```
+
+Print the basic fit measures for all the CFA models.
+
+```r
+do.call(rbind, lapply(cfa_results, FUN = function(x) {
+  x$fit[c('chisq','df','cfi','tli','rmsea','rmsea.ci','cfi.obs','tli.obs','rmsea.obs')]
+}))
+```
+
+```{r echo=FALSE}
+knitr::kable(do.call(rbind, lapply(cfa_results, FUN = function(x) {
+  x$fit[c('chisq','df','cfi','tli','rmsea','rmsea.ci','cfi.obs','tli.obs','rmsea.obs')]
+})))
+```
+
+
+Calculate fit measures for all the CFA models.
+
+```r
+t(do.call(rbind, lapply(cfa_results, FUN = function(x) x$fit)))
+```
+
+```{r, echo=FALSE}
+knitr::kable(t(do.call(rbind, lapply(cfa_results, FUN = function(x) x$fit))))
+```
+
+
+### Summarize and draw diagrams of CFA models without negative observations
+
+Select CFA models without negative observations
+
+```{r}
+(mdls <- names(cfa_results)[sapply(cfa_results, FUN = function(x) {
+  all(is.na(x$fit[c('cfi.obs','tli.obs','rmsea.obs')]))
+})])
+```
+
+Print summaries and diagrams for the CFA models without negative observations
+
+```{r, fig.height=12, fig.width=12}
+for (mdl in mdls) {
+  cat(mdl,"\n"); summary(cfa_results[[mdl]]$cfa, standardized = T)
+  semPaths(cfa_results[[mdl]]$cfa,  "std"
+           , curvePivot = T, layout = "circle", rotation = 3, fade = F, intercepts = F, residuals = F
+           , sizeLat = 4, sizeLat2 = 3, sizeMan = 4, sizeMan2 = 2, curvature = 2.5, esize = 1.5, asize = 1.5
+           , edge.label.cex = 0.35, edge.label.position = 0.5, levels = c(9.5,10,10,10))
+}
+```
+
+### Summarize comparison between CFA models without negative observations
+
+```{r}
+combn(mdls, 2, simplify = F, FUN = function(x) {
+  lavTestLRT(cfa_results[[x[1]]]$cfa, cfa_results[[x[2]]]$cfa, model.names=x)
+})
+```
+
+> *Note*: Significant difference Pr(>Chisq) indicates that:
+> The model1 fits the gathered data significantly different (better/worse) than the model2
+
+
+```{r include=FALSE}
+options(warn = defaultW)
+```
