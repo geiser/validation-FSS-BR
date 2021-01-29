@@ -2,9 +2,9 @@
 title: "Identifing and Removing Careless"
 author: Geiser Chalco Challco <geiser@alumni.usp.br>
 output:
-  html_document: default
-  word_document: default
   github_document: default
+  word_document: default
+  html_document: default
   pdf_document:
     keep_tex: true
 fontsize: 10pt

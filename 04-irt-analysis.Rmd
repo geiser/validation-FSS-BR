@@ -14,7 +14,7 @@ fontsize: 10pt
 * Source code: [04-irt-analysis.Rmd](04-irt-analysis.Rmd)
 
 ```{r setup, include=FALSE, echo=FALSE}
-wants <- c('readr','dplyr','psych','lavaan','foreign','sirt','mirt','TAM','sfsmisc','unix')
+wants <- c('readr','dplyr','psych','lavaan','foreign','sirt','mirt','TAM','sfsmisc','unix','lavaan')
 has <- wants %in% rownames(installed.packages())
 if (any(!has)) install.packages(wants[!has])
 
@@ -99,11 +99,6 @@ LAVAAN MODEL:
 #cfa_mod <- cfa(lavmodel, data=datItem, std.lv=T, estimator="WLSMV", meanstructure=T)
 #cfa.extract.itempars(cfa_mod)
 #IRTLikelihood.cfa(datItem, cfa_mod)
-
-unix::rlimit_all()
-#unix::rlimit_as(1e24)
-#unix::rlimit_memlock(max=1e12)
-
 
 res <- tamaan(lavmodel, datItem, tam.method = 'tam.mml.2pl', control=list(maxiter=20))
 
