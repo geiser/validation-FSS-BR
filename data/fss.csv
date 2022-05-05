@@ -1,0 +1,397 @@
+﻿ID,age,data_birth,gender,civil_status,ethnicity,socioeconomic,sexual_orientation,activity,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,Q31,Q32,Q33,Q34,Q35,Q36,IRV
+P001,Menos de 18,3/21/05,Feminino,Solteiro(a),Branco,Classe baixa,Homossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,4,3,4,3,5,3,5,4,2,2,4,3,3,2,4,1,5,4,4,4,4,2,4,3,5,1,5,3,4,4,5,3,5,1.128280051
+P002,25-34,12/30/95,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,3,3,3,4,3,4,4,2,2,5,4,3,3,4,3,4,3,3,4,4,4,3,3,5,4,4,4,3,4,5,4,4,0.728119997
+P003,18-24,7/4/02,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,4,2,4,4,5,5,4,3,2,1,3,2,4,4,5,4,3,4,1,5,4,5,4,4,4,5,3,5,4,5,4,5,3,4,3,5,1.124051628
+P004,18-24,11/11/01,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),2,4,3,3,4,4,4,4,4,4,4,2,2,2,4,4,4,4,4,3,3,2,2,2,4,4,4,4,4,3,4,4,4,4,4,3,0.808683037
+P005,Menos de 18,9/29/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,2,3,2,3,4,4,4,3,2,2,2,2,2,4,2,3,2,3,3,4,2,3,2,2,4,2,2,3,4,2,4,4,0.89265077
+P006,Menos de 18,2/6/07,Masculino,Solteiro(a),Branco,Classe alta,Heterossexual,Aplicativo Question,4,4,3,4,4,3,4,4,4,4,4,1,2,4,4,4,4,4,4,5,4,1,5,4,5,5,5,5,1,5,4,5,4,5,4,5,1.105182596
+P007,Menos de 18,4/4/07,Feminino,Solteiro(a),Branco,Classe média alta,Heterossexual,Aplicativo Question,4,4,3,2,4,3,4,3,2,3,3,2,3,3,3,3,3,3,3,4,4,4,3,3,3,4,2,2,3,3,2,3,3,4,3,3,0.649175301
+P008,Menos de 18,4/5/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,3,2,2,4,3,2,4,4,2,1,3,3,2,3,3,3,4,3,1,4,3,2,3,3,2,2,4,4,4,4,4,4,4,0.940702203
+P009,Menos de 18,3/22/05,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,3,3,4,3,2,2,4,3,3,3,4,3,2,3,2,2,4,3,3,3,4,3,2,4,2,2,4,3,4,3,2,2,5,0.844684594
+P010,18-24,8/28/98,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,4,3,4,2,4,5,4,3,3,4,5,5,3,2,5,5,4,3,4,4,4,4,3,2,5,5,5,5,4,2,5,5,0.97914767
+P011,35-44,5/2/79,Masculino,Casado(a),Branco,Classe média,Heterossexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,4,4,4,4,3,2,4,3,2,3,4,3,3,4,4,3,3,3,2,2,4,3,4,4,4,3,4,2,2,2,4,3,3,3,2,3,0.774596669
+P012,Menos de 18,6/30/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,4,2,3,3,3,4,5,4,3,3,5,4,4,4,3,5,5,3,3,4,5,3,5,4,3,4,5,3,5,4,3,4,5,0.855885321
+P013,Menos de 18,11/4/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,3,1,4,3,3,4,4,2,4,4,4,4,4,2,3,4,3,3,4,4,4,4,4,2,3,4,3,4,4,2,3,4,0.806225775
+P014,Mais de 55,2/13/23,Masculino,Casado(a),Branco,Classe média baixa,Prefiro não declarar,identificar coordenadas catesianas,3,4,4,3,2,1,2,1,4,4,2,2,4,4,2,2,3,3,2,4,2,3,3,3,3,2,2,3,2,1,4,5,4,2,2,4,1.037013416
+P015,25-34,7/24/95,Feminino,Solteiro(a),Branco,Classe média alta,Heterossexual,Breve aula sobre ergonomia para educadores,4,4,4,4,3,4,4,3,3,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,3,3,4,0.421637021
+P016,Menos de 18,6/16/05,Feminino,Solteiro(a),Branco,Classe média,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,2,4,4,4,4,4,4,3,4,3,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,0.464621368
+P017,Menos de 18,9/12/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,2,4,2,2,2,1,4,4,4,4,2,4,3,2,2,2,4,2,3,4,2,3,4,4,2,1,3,3,2,4,2,4,4,5,1.055221334
+P018,Menos de 18,8/10/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,4,4,5,1,4,2,4,5,4,2,4,5,4,3,4,2,4,5,4,3,4,4,4,4,5,2,4,5,4,4,4,2,5,5,1.055597326
+P019,Menos de 18,2/25/05,Feminino,Solteiro(a),Não me identifico,Classe média baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,3,2,4,4,4,4,4,3,4,4,3,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,3,4,3,4,4,4,0.48468612
+P020,35-44,4/8/80,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,2,3,4,4,4,3,5,4,4,3,2,2,4,4,4,4,5,5,4,3,4,2,4,3,5,4,5,5,4,4,4,4,1,5,4,1.00316958
+P021,Menos de 18,3/10/05,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,3,2,3,1,3,3,4,2,2,4,4,2,3,1,3,4,3,2,3,4,3,2,2,1,2,4,4,3,3,1,3,4,0.990029661
+P022,35-44,3/9/77,Feminino,Casado(a),Branco,Classe média,Heterossexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,4,4,5,5,4,4,5,3,3,4,4,3,4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,3,3,4,5,5,4,3,3,5,0.649175301
+P023,Menos de 18,4/13/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,5,4,1,5,4,1,5,5,3,5,5,5,4,4,4,4,5,5,4,4,4,5,4,5,4,2,5,5,5,5,5,2,5,1.130739328
+P024,Menos de 18,12/20/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,3,4,4,3,5,3,4,3,5,4,5,4,4,3,3,4,4,3,4,3,4,4,4,3,5,3,4,4,5,3,5,0.682548911
+P025,Menos de 18,12/19/04,Masculino,Solteiro(a),Branco,Classe alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,2,3,4,5,4,4,2,4,4,3,4,4,2,4,3,3,4,4,4,4,2,2,3,4,4,3,5,4,3,2,3,4,4,0.87650098
+P026,Menos de 18,11/14/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Quaisquer atividade relacionadas ao Vetor Velocidade e Vetor Aceleração,4,2,2,3,1,1,3,3,4,2,2,2,2,1,2,2,2,2,2,2,2,2,3,1,2,3,3,3,4,2,3,4,4,5,5,2,1.054092553
+P027,Menos de 18,10/24/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,3,3,4,3,2,3,2,4,5,4,2,2,5,3,2,3,2,4,5,3,2,3,3,4,3,3,2,2,5,4,2,4,2,4,5,1.07902072
+P028,Menos de 18,9/21/05,Masculino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,3,3,2,1,3,1,3,3,1,3,3,1,1,1,3,1,3,3,3,3,3,2,1,1,3,1,3,3,2,1,3,1,3,3,0.937321412
+P029,Menos de 18,11/25/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,5,4,4,4,4,3,4,4,1,4,4,4,4,4,4,3,4,3,4,4,4,4,4,4,4,3,4,4,4,5,4,3,5,0.708228284
+P030,18-24,10/8/99,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,3,2,4,3,2,4,2,4,5,3,1,2,4,4,4,4,3,3,5,2,2,4,4,4,4,4,2,4,5,4,4,4,2,4,5,1.052208562
+P031,Menos de 18,7/7/04,Feminino,Solteiro(a),Branco,Classe baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,3,4,4,1,4,3,3,4,4,2,2,4,3,4,4,2,4,4,4,2,4,4,3,4,4,3,2,4,3,5,5,3,3,4,0.940702203
+P032,25-34,1/31/95,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,4,4,2,4,4,2,4,4,4,4,4,2,2,4,4,4,4,4,4,4,4,2,4,4,2,4,4,4,4,4,2,4,4,4,4,4,0.802772972
+P033,35-44,10/7/84,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,5,4,4,4,4,2,4,4,3,4,4,4,4,4,4,4,4,2,3,4,3,4,5,4,4,4,4,4,3,4,4,4,4,4,3,5,0.654653671
+P034,Menos de 18,8/15/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,4,2,2,4,4,4,4,1,2,4,4,4,2,4,4,4,3,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0.87650098
+P035,Menos de 18,9/22/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,4,5,3,3,4,4,4,5,4,3,3,5,4,3,4,4,3,4,3,4,5,4,3,3,4,5,4,5,3,4,5,5,3,5,0.792824967
+P036,Menos de 18,3/13/05,Feminino,Solteiro(a),Pardo,Classe média baixa,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,5,4,5,3,3,5,5,5,4,5,5,4,4,4,3,5,5,3,5,5,5,5,5,3,3,5,5,4,5,4,3,5,0.833333333
+P037,Menos de 18,3/16/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,2,3,4,4,2,4,2,2,5,4,2,2,4,4,3,4,3,1,4,3,2,4,4,4,4,4,2,1,5,3,4,4,3,1,5,1.14918881
+P038,Menos de 18,11/14/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,2,3,4,1,1,2,2,4,3,2,1,2,4,2,2,4,2,2,4,2,2,3,4,2,3,4,3,2,4,2,4,4,3,4,4,1.037013416
+P039,35-44,8/18/85,Feminino,Casado(a),Branco,Classe média,Heterossexual,Aplicativo Question,5,5,5,5,4,5,2,5,5,5,5,5,3,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,0.76997217
+P040,Menos de 18,11/2/04,Feminino,Solteiro(a),Branco,Classe média alta,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,3,3,3,4,3,3,4,4,3,3,4,3,2,3,2,3,3,4,3,4,4,3,2,3,2,3,3,2,3,4,3,3,4,0.654653671
+P041,35-44,4/24/82,Masculino,Casado(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,4,3,3,3,4,3,2,3,4,2,4,4,2,3,4,3,2,3,2,4,4,4,2,3,4,2,3,4,2,4,4,2,2,0.820375446
+P042,Menos de 18,7/15/05,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,3,3,3,4,3,2,4,2,3,3,3,3,3,3,3,3,2,2,2,2,3,2,3,3,3,3,4,3,3,3,3,2,4,2,0.592947975
+P043,Menos de 18,3/7/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,A utilização do Kahoot!,4,3,3,3,4,2,3,4,5,3,4,2,2,4,3,5,3,4,5,3,3,2,3,4,4,4,4,5,4,4,3,5,3,5,4,3,0.906326967
+P044,Menos de 18,6/3/06,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,3,1,1,3,3,1,3,5,5,3,1,5,5,5,3,3,3,1,5,3,1,1,3,5,1,5,3,3,5,3,3,1,1,3,3,4,1.482972134
+P045,Menos de 18,11/4/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,3,3,4,2,3,3,4,5,3,4,4,3,4,2,3,3,4,3,3,4,4,2,3,2,3,4,3,4,3,2,3,4,0.749073502
+P046,Menos de 18,8/2/05,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,4,4,3,1,4,2,1,4,4,4,3,4,4,3,3,3,2,4,3,4,4,4,3,3,3,2,1,4,4,3,4,3,1,5,1.07902072
+P047,25-34,5/10/87,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,4,4,4,3,4,4,3,3,3,4,4,4,4,4,4,4,3,4,4,4,4,4,4,3,4,4,4,4,4,3,4,4,0.421637021
+P048,Menos de 18,7/6/04,Feminino,Solteiro(a),Não me identifico,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,5,4,2,4,3,4,3,3,5,5,2,4,2,4,4,4,3,5,5,4,3,4,2,3,4,5,4,5,3,4,4,0.906326967
+P049,Menos de 18,6/16/05,Feminino,Solteiro(a),Branco,Classe média,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,2,4,3,4,4,5,3,4,3,4,4,4,4,4,4,3,4,4,3,4,4,4,3,4,4,5,4,4,3,4,4,0.576662538
+P050,18-24,6/21/02,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,4,3,4,3,4,5,4,2,3,4,4,3,3,3,4,4,4,2,4,4,4,3,3,2,4,5,4,4,4,3,4,5,0.761681515
+P051,Menos de 18,9/6/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,1,2,2,2,4,3,3,3,3,3,3,3,3,2,2,2,2,3,3,2,4,3,2,2,2,3,3,3,3,2,2,4,3,3,2,0.717137166
+P052,Menos de 18,1/14/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,1,3,4,2,3,4,3,3,4,4,4,3,2,2,3,3,2,3,4,4,4,3,4,3,4,5,4,4,4,2,4,0.866941348
+P053,Menos de 18,1/17/05,Feminino,Solteiro(a),Negro,Classe média,Heterossexual,A utilização do Kahoot!,4,2,4,2,3,1,4,1,5,4,2,3,3,5,4,4,3,2,5,2,2,2,2,4,3,5,3,5,5,4,3,5,4,4,5,4,1.227657467
+P054,18-24,9/8/00,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,5,5,0.5
+P055,Menos de 18,4/17/04,Feminino,Solteiro(a),Amarelo,Classe média,Heterossexual,A utilização do Kahoot!,4,4,2,4,3,1,4,1,4,4,3,2,2,5,4,4,3,1,5,5,4,2,4,4,4,4,3,1,3,5,3,4,4,1,4,4,1.237957868
+P056,Menos de 18,12/12/06,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,2,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5,4,5,3,3,0.554204707
+P057,Menos de 18,2/13/05,Feminino,Solteiro(a),Branco,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,5,4,4,4,3,1,4,5,3,3,5,4,4,5,3,3,5,4,3,4,5,5,4,5,3,2,5,4,4,5,4,1,4,1.108409414
+P058,25-34,5/26/95,Feminino,Solteiro(a),Branco,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,2,2,2,2,2,3,4,3,4,2,3,2,3,3,3,3,4,3,3,2,2,3,3,2,3,2,4,3,4,3,3,3,4,3,3,0.682548911
+P059,Menos de 18,11/15/04,Masculino,Solteiro(a),Branco,Classe média baixa,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,4,5,4,4,5,4,5,5,5,2,4,5,5,5,4,2,5,5,4,4,4,5,5,5,5,4,5,5,4,5,5,4,5,5,0.774596669
+P060,Menos de 18,9/23/04,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,4,2,4,3,3,5,5,1,3,5,4,4,4,3,3,5,3,3,5,5,4,4,5,3,3,5,4,4,5,3,3,5,1.035864795
+P061,25-34,10/24/94,Feminino,Casado(a),Pardo,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,3,3,3,2,2,3,3,4,3,3,3,3,2,2,2,2,2,4,3,3,3,3,2,3,3,2,2,4,3,3,2,2,2,4,3,3,0.649175301
+P062,Menos de 18,3/1/07,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Aplicativo Question,4,2,2,4,3,2,3,4,2,3,2,3,3,4,3,5,5,3,3,3,3,3,2,3,3,4,4,4,2,3,4,4,4,4,5,4,0.888640838
+P063,Menos de 18,4/5/04,Feminino,Solteiro(a),Branco,Classe média,Bissexual,A utilização do Kahoot!,3,3,2,3,2,2,3,3,4,2,3,4,4,4,2,2,3,3,4,2,2,3,3,3,2,2,3,3,3,3,2,1,3,2,4,4,0.786291274
+P064,18-24,9/9/01,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,3,2,4,4,2,3,5,4,5,2,2,2,4,4,4,2,4,4,5,4,2,4,4,4,4,4,5,4,5,5,4,3,5,4,4,1.009085709
+P065,18-24,8/28/98,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,4,4,4,2,4,1,5,4,4,3,4,4,4,4,4,2,4,4,4,3,3,4,4,4,4,1,4,5,4,4,4,2,4,5,0.956182887
+P066,35-44,4/24/82,Masculino,Casado(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,3,4,2,3,3,2,4,3,4,3,4,4,2,3,3,2,4,3,3,4,4,4,2,3,3,2,4,4,2,4,2,3,3,0.774596669
+P067,18-24,11/18/00,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,3,3,4,3,3,4,5,4,3,3,4,4,5,4,3,4,5,4,3,4,4,4,4,4,3,2,5,3,4,3,4,4,5,0.741084576
+P068,Menos de 18,5/21/05,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,5,4,2,4,4,5,5,5,2,2,4,3,4,3,3,5,5,4,3,5,4,3,4,4,4,5,5,3,5,4,5,4,5,0.956182887
+P069,18-24,1/1/00,Masculino,Solteiro(a),Branco,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,2,3,2,4,4,3,2,4,5,2,3,3,4,4,3,2,2,4,4,2,2,3,3,3,4,2,2,4,5,4,4,2,4,4,5,0.996422171
+P070,Menos de 18,11/15/04,Masculino,Solteiro(a),Branco,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,5,1,4,4,4,5,5,2,1,4,4,5,5,3,4,5,4,1,4,5,4,5,5,4,4,5,4,5,4,4,3,5,1.15847464
+P071,Menos de 18,2/9/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,5,2,2,4,2,5,3,4,3,5,4,2,2,1,2,4,3,2,3,4,4,2,3,4,2,4,3,2,3,2,2,4,4,1.099422648
+P072,Menos de 18,9/26/04,Masculino,Solteiro(a),Branco,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,4,4,5,3,4,5,5,2,2,5,4,4,5,3,4,5,4,2,5,5,5,4,4,3,4,5,4,5,5,3,4,5,0.960737151
+P073,18-24,4/10/01,Masculino,Solteiro(a),Branco,Classe média alta,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,2,2,2,1,4,2,2,5,2,1,2,2,2,2,2,3,2,5,2,5,2,3,4,3,4,5,1,5,5,5,3,3,3,5,1.401529776
+P074,25-34,6/4/88,Masculino,Casado(a),Negro,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,4,3,3,4,3,5,3,5,3,4,3,4,4,4,4,3,4,4,3,3,2,3,4,4,4,4,4,4,4,4,3,5,4,4,0.668449996
+P075,Menos de 18,3/14/05,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,3,2,4,4,3,4,4,4,5,3,2,2,4,4,3,4,1,4,4,3,3,4,4,4,5,4,1,2,4,4,4,4,4,4,5,1.02662956
+P076,Menos de 18,5/16/05,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,4,5,3,5,4,5,5,4,5,4,3,4,5,5,5,5,5,5,5,4,5,3,4,4,5,5,5,3,5,4,4,4,5,0.696362431
+P077,Menos de 18,2/2/20,Masculino,Solteiro(a),Amarelo,Classe média,Heterossexual,Quiz no Google Form,5,2,2,4,2,4,2,2,3,2,2,3,4,4,5,1,1,3,3,3,3,4,3,3,1,3,5,5,4,3,3,3,3,3,3,5,1.130739328
+P078,Menos de 18,8/16/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,5,4,2,5,5,4,5,5,4,3,5,5,5,5,5,4,4,5,3,5,5,4,5,5,5,4,5,5,5,5,5,3,5,0.772544754
+P079,Menos de 18,10/8/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,3,3,2,3,3,2,4,4,3,3,4,3,4,3,3,2,4,3,3,4,4,3,4,3,3,2,4,3,4,4,4,2,4,0.701472374
+P080,Menos de 18,9/2/06,Feminino,Solteiro(a),Não me identifico,Classe média,Heterossexual,Quiz no Google Form,4,3,2,4,3,4,4,3,4,3,3,3,4,4,3,3,3,4,4,4,3,1,4,3,2,3,4,4,4,3,3,4,5,3,5,3,0.806225775
+P081,Menos de 18,11/18/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,4,4,5,4,4,3,4,5,5,2,4,5,5,4,5,4,4,4,4,4,5,4,4,4,5,3,4,5,5,5,5,3,4,5,0.741084576
+P082,Menos de 18,11/27/04,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,3,2,1,4,1,3,5,3,3,3,4,4,3,2,1,3,4,3,4,3,4,4,3,3,1,3,4,3,3,2,1,3,4,1.027788503
+P083,Menos de 18,10/24/05,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,4,2,4,5,4,3,4,2,2,4,4,3,4,5,4,4,4,4,4,4,4,4,4,5,1,4,4,3,4,5,4,5,0.937321412
+P084,18-24,6/21/02,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,4,4,4,3,4,2,4,5,4,3,3,4,4,3,3,2,4,5,4,3,4,4,4,3,4,2,4,4,4,4,4,2,4,5,0.848902186
+P085,Menos de 18,10/30/04,Masculino,Solteiro(a),Pardo,Classe média,Homossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,3,4,2,3,5,1,4,3,4,2,3,4,2,2,1,2,4,4,3,1,3,4,4,2,5,1,4,4,5,5,5,1,5,1.344004913
+P086,Menos de 18,5/23/05,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,4,1,4,2,3,3,4,1,3,5,4,5,4,2,3,5,3,2,4,4,4,4,4,4,3,5,3,5,4,4,3,5,1.052208562
+P087,Menos de 18,9/26/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,2,3,3,3,4,3,3,2,4,3,4,3,2,2,3,0.522509209
+P088,Menos de 18,11/21/05,Feminino,Solteiro(a),Não me identifico,Classe média alta,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,1,4,4,3,3,4,4,4,4,4,3,4,4,4,4,4,4,5,4,4,3,4,4,4,4,4,3,4,5,5,4,0.682548911
+P089,Menos de 18,12/20/06,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,3,2,3,3,2,3,1,1,3,2,1,2,3,1,1,3,2,1,2,3,3,2,2,2,2,2,3,1,3,3,3,3,3,1,4,4,0.888640838
+P090,Menos de 18,11/21/04,Feminino,Solteiro(a),Branco,Classe baixa,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,4,4,4,4,4,4,4,4,3,3,3,4,4,3,3,4,3,3,2,5,4,4,4,3,4,2,4,4,5,5,5,4,5,0.76997217
+P091,Menos de 18,9/1/04,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,3,4,4,3,4,4,2,3,4,4,3,4,4,3,4,4,3,3,4,4,3,4,4,3,4,4,4,4,4,3,4,0.542627353
+P092,Menos de 18,1/26/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,5,4,4,3,3,3,5,5,3,1,5,5,4,3,2,3,5,4,2,5,5,3,4,4,5,2,5,4,4,4,2,2,5,1.155731061
+P093,Menos de 18,9/30/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,3,1,3,1,4,4,4,3,3,4,4,2,3,3,4,4,3,3,4,4,3,4,3,2,2,5,3,4,3,5,4,5,0.96444737
+P094,25-34,9/21/91,Feminino,Solteiro(a),Pardo,Classe baixa,Homossexual,Palestra,4,4,4,4,2,2,4,4,4,4,4,2,2,4,3,2,2,4,2,4,2,2,4,3,2,2,2,2,3,4,2,3,2,2,3,4,0.940702203
+P095,Menos de 18,9/1/04,Feminino,Solteiro(a),Amarelo,Classe média baixa,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,3,2,2,3,1,3,5,1,3,3,4,3,2,3,2,3,4,3,3,3,3,1,3,2,1,3,5,2,2,3,1,4,5,1.108409414
+P096,25-34,12/27/91,Masculino,Solteiro(a),Negro,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,5,3,4,4,5,4,5,4,5,5,3,4,4,4,3,4,4,5,5,4,4,3,4,4,4,4,4,5,5,4,4,4,4,5,5,0.624245576
+P097,18-24,9/8/00,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,5,5,5,2,5,2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,3,5,5,5,5,4,0.76997217
+P098,Menos de 18,12/3/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,3,5,5,3,5,3,3,5,4,2,3,5,5,5,5,3,3,5,5,3,5,5,5,5,5,3,1,5,5,5,5,4,3,5,1.108409414
+P099,35-44,1/12/83,Masculino,Casado(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,5,5,5,4,5,4,5,5,5,3,2,3,5,4,5,4,5,5,5,4,3,2,5,4,5,5,5,5,5,4,5,3,5,5,5,0.93052298
+P100,Menos de 18,7/29/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,4,2,3,3,4,4,3,2,2,4,3,4,4,2,4,4,3,3,3,4,3,4,3,2,4,4,2,2,3,5,4,4,0.828078671
+P101,Menos de 18,4/18/05,Feminino,Solteiro(a),Branco,Classe média baixa,Bissexual,A utilização do Kahoot!,3,5,4,3,2,4,2,4,1,4,3,1,3,3,3,1,4,3,4,3,4,2,5,4,2,4,5,1,2,4,3,2,3,3,4,1,1.18288053
+P102,Menos de 18,7/12/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,3,4,4,2,4,3,2,3,3,3,3,5,4,4,4,3,2,3,3,2,4,4,4,4,4,3,2,4,4,4,4,3,2,3,0.786291274
+P103,Menos de 18,9/16/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,3,4,3,3,3,4,4,4,4,4,3,3,3,3,4,4,3,4,4,4,3,3,3,3,4,4,4,4,3,3,4,0.503952631
+P104,Menos de 18,7/2/07,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Quiz no Google Form,3,4,3,3,3,1,2,4,5,1,3,4,4,4,4,1,5,5,1,1,2,2,2,2,2,2,4,5,3,3,4,4,4,4,4,5,1.290687033
+P105,18-24,7/31/00,Masculino,Solteiro(a),Negro,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,5,5,5,5,5,5,5,5,4,5,5,3,3,3,3,3,3,3,3,3,3,5,3,3,3,3,3,3,5,5,5,5,5,5,5,0.983998968
+P106,18-24,4/30/97,Feminino,Solteiro(a),Negro,Classe baixa,Bissexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,4,5,5,5,5,5,5,5,2,2,4,5,5,2,3,5,5,5,2,2,5,5,5,5,4,5,4,5,4,2,4,4,4,5,1.124051628
+P107,Menos de 18,10/10/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,5,5,4,5,1,2,4,4,2,4,5,4,5,5,2,2,4,4,4,4,5,4,5,5,1,2,4,4,5,4,1,1,4,1.352246808
+P108,18-24,9/9/01,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,2,3,4,2,3,5,4,5,2,2,2,4,4,3,2,5,4,4,4,2,3,4,4,4,4,5,4,5,4,4,3,5,5,4,1.014185106
+P109,Menos de 18,12/14/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,4,4,3,3,4,3,4,2,2,4,5,2,2,2,3,4,3,2,4,3,4,4,2,3,3,5,5,4,4,3,4,4,0.934353184
+P110,35-44,6/7/83,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,3,4,4,4,4,5,3,2,2,4,4,2,3,4,4,4,2,2,4,3,4,2,4,4,3,4,4,2,4,4,4,5,0.878310066
+P111,Menos de 18,11/11/04,Masculino,Solteiro(a),Branco,Classe média alta,Heterossexual,A utilização do Kahoot!,4,1,2,3,3,3,4,4,2,3,3,4,3,4,3,3,4,3,4,3,3,2,4,4,4,3,4,4,2,4,3,3,4,3,3,4,0.76997217
+P112,25-34,7/20/95,Masculino,Solteiro(a),Pardo,Classe média alta,Heterossexual,Breve aula sobre ergonomia para educadores,4,5,2,5,5,2,4,5,2,5,5,1,2,5,5,4,4,1,2,5,4,1,4,5,4,4,4,5,2,5,4,4,4,5,3,5,1.354592424
+P113,Menos de 18,3/1/05,Feminino,Solteiro(a),Branco,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,3,2,4,3,2,4,4,3,4,4,4,2,4,2,2,5,4,4,4,4,4,2,4,3,2,4,4,2,4,4,2,4,5,0.939435832
+P114,Menos de 18,7/7/04,Masculino,Solteiro(a),Amarelo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,5,5,5,3,3,4,5,4,3,4,5,4,4,3,3,4,4,3,4,5,5,4,5,3,3,5,5,5,4,4,3,5,0.833333333
+P115,Menos de 18,11/14/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,4,5,4,5,4,4,4,4,3,5,4,4,4,5,4,5,3,4,3,4,4,4,3,5,3,4,4,4,3,5,4,5,0.654047229
+P116,Menos de 18,3/31/05,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,3,3,2,4,4,3,4,4,4,4,3,3,3,4,4,2,4,3,4,3,3,4,3,4,3,3,5,4,3,4,3,3,3,0.652224521
+P117,Menos de 18,5/25/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,4,3,4,3,2,3,5,4,3,4,4,3,3,4,4,4,4,3,2,2,3,3,4,4,4,3,5,4,4,4,3,3,5,5,2,0.844684594
+P118,Menos de 18,6/14/04,Masculino,Solteiro(a),Branco,Classe média,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,3,4,2,3,4,4,3,2,2,2,4,3,1,2,4,3,3,3,2,4,4,4,1,3,4,4,3,2,2,3,4,4,2,0.954521404
+P119,Menos de 18,9/27/05,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,5,5,5,5,5,5,5,5,3,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,4,3,4,5,5,5,0.524782646
+P120,Menos de 18,3/8/05,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,4,4,2,4,4,4,5,4,1,4,4,4,2,2,3,4,4,4,4,4,4,4,2,2,4,4,4,5,3,4,2,4,4,0.96444737
+P121,Menos de 18,11/21/04,Masculino,Solteiro(a),Pardo,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,3,3,3,4,1,4,2,4,4,3,4,4,4,4,4,4,4,4,4,3,3,3,4,4,4,4,4,3,4,4,5,5,5,5,4,0.831903535
+P122,Menos de 18,12/11/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,2,2,2,3,2,2,2,2,3,2,2,2,2,2,2,2,3,3,3,2,2,2,2,2,2,2,3,2,4,2,2,2,2,3,4,0.639320075
+P123,Menos de 18,3/25/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,2,4,4,4,3,4,4,3,2,2,2,4,4,2,2,4,2,3,3,2,3,4,4,2,4,4,4,3,4,3,4,4,4,4,0.848902186
+P124,45-54,5/12/68,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Breve aula sobre ergonomia para educadores,4,3,4,3,4,2,4,5,4,4,3,4,4,4,4,3,2,5,3,3,2,4,3,2,4,2,2,5,3,3,3,2,4,5,4,4,0.939435832
+P125,Menos de 18,2/5/05,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,5,4,1,4,2,4,4,4,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,5,4,5,3,5,0.878310066
+P126,Menos de 18,5/30/07,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Aplicativo Question,4,2,4,3,3,2,2,4,4,4,4,3,2,4,2,1,3,4,4,4,2,3,2,3,3,2,3,4,4,2,2,1,4,4,3,4,0.970599553
+P127,Menos de 18,11/25/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,2,4,4,1,4,1,1,3,3,3,3,3,4,4,5,1,3,3,3,3,4,4,4,4,4,2,3,4,5,4,4,2,4,4,1.072010424
+P128,Menos de 18,12/13/04,Masculino,Solteiro(a),Branco,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,1,1,4,5,5,4,3,5,2,1,5,3,5,5,5,2,4,5,2,2,1,4,5,5,5,2,3,5,1,1,5,4,5,5,2,1,1.62788206
+P129,Menos de 18,10/28/04,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,4,3,1,4,3,5,4,5,1,3,4,3,4,4,3,5,5,4,2,4,4,5,4,4,3,5,5,3,5,5,3,5,4,1.11661336
+P130,Menos de 18,7/4/04,Masculino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,4,4,4,4,3,4,5,4,4,2,4,4,4,4,2,4,5,4,2,5,4,4,4,4,2,3,4,4,5,5,3,4,5,0.89265077
+P131,Menos de 18,9/21/04,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,4,4,2,4,3,4,4,4,3,2,4,4,3,3,2,4,4,4,2,3,4,4,4,4,3,2,4,4,4,4,3,4,4,0.810643483
+P132,Menos de 18,3/6/07,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Aplicativo Question,4,2,3,4,3,4,4,4,3,4,4,3,2,4,4,3,3,3,4,4,3,2,3,3,4,4,4,4,4,3,3,3,4,4,4,3,0.652224521
+P133,Menos de 18,6/3/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,2,2,2,2,2,4,2,4,4,2,2,3,2,4,2,2,2,4,4,2,2,2,2,2,2,2,2,4,4,2,3,2,2,4,4,2,0.903256894
+P134,Menos de 18,8/17/04,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,4,5,3,3,4,5,5,2,2,5,4,4,5,4,5,5,4,2,3,4,4,4,5,4,3,4,4,4,4,4,3,5,0.89265077
+P135,18-24,7/23/99,Masculino,Solteiro(a),Pardo,Classe média alta,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,2,3,3,4,4,4,4,5,3,2,2,4,2,3,3,4,5,5,2,2,2,3,4,3,3,2,4,5,2,4,4,4,4,5,1.021980648
+P136,Menos de 18,8/13/04,Feminino,Solteiro(a),Branco,Classe média,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,5,5,1,4,3,3,5,4,1,2,5,5,2,5,1,3,5,4,1,5,5,5,3,5,2,4,5,5,4,5,2,3,5,1.406334874
+P137,Menos de 18,3/4/05,Masculino,Solteiro(a),Branco,Classe média,Bissexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,4,4,3,2,3,3,3,4,4,4,4,4,3,3,2,2,4,4,4,3,4,3,3,3,2,2,4,4,3,2,2,2,4,4,4,0.796819073
+P138,Menos de 18,9/6/06,Feminino,Solteiro(a),Não me identifico,Classe média alta,Heterossexual,Quiz no Google Form,4,4,4,4,4,1,4,3,4,4,5,2,2,5,4,5,4,3,3,4,4,2,4,5,4,4,4,3,4,5,4,4,4,3,3,5,0.937321412
+P139,Menos de 18,9/14/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,1,5,4,4,5,4,1,3,5,2,2,4,4,4,4,2,3,4,3,2,5,4,3,4,5,4,3,4,3,4,5,4,2,4,1.106976434
+P140,Menos de 18,2/18/05,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,2,5,4,1,4,3,2,4,3,3,2,5,3,5,4,2,2,5,3,2,5,5,3,5,4,3,3,5,3,5,5,5,2,5,1.229272594
+P141,Menos de 18,2/22/05,Feminino,Solteiro(a),Pardo,Classe média alta,Heterossexual,A utilização do Kahoot!,4,3,3,4,3,1,3,1,4,5,3,3,3,4,4,3,4,2,5,3,3,3,3,4,3,3,2,1,3,3,4,4,4,1,5,4,1.064208477
+P142,Menos de 18,9/13/04,Masculino,União estável,Pardo,Classe média baixa,Homossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,5,4,4,4,5,3,4,5,2,2,4,4,4,4,2,3,4,4,2,4,4,4,4,4,5,3,5,4,4,5,5,3,5,0.918936583
+P143,Menos de 18,8/16/04,Masculino,Solteiro(a),Branco,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,4,1,4,2,4,5,5,2,2,5,5,5,5,2,4,5,5,3,3,4,4,5,4,2,3,5,5,5,5,3,3,5,1.189904625
+P144,Menos de 18,2/4/05,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,4,2,3,3,2,5,4,3,2,5,4,4,4,3,3,5,3,2,4,4,4,4,4,3,2,5,4,4,4,3,2,5,0.967323258
+P145,18-24,10/11/01,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,4,5,4,3,2,4,3,4,4,3,5,2,4,3,2,4,4,3,4,3,4,2,4,2,2,4,3,5,4,3,3,5,4,5,4,4,0.939435832
+P146,Menos de 18,6/18/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,5,5,3,4,3,5,5,5,1,4,5,5,5,5,5,5,5,5,4,5,4,5,5,5,4,5,5,5,5,5,5,5,5,0.833333333
+P147,Menos de 18,9/14/04,Feminino,Solteiro(a),Negro,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,3,4,4,4,3,3,5,3,3,3,4,4,3,4,2,3,5,3,3,4,4,3,4,4,3,5,5,4,4,4,4,3,4,0.723198364
+P148,18-24,10/18/02,Masculino,Solteiro(a),Não me identifico,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),2,4,2,2,5,1,5,5,5,5,2,2,4,5,5,1,2,5,5,3,1,3,3,2,5,1,3,5,3,3,5,2,3,5,5,5,1.501322169
+P149,25-34,7/7/95,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,4,4,4,3,3,5,4,4,4,4,4,4,4,2,2,4,4,3,2,4,3,2,4,3,3,5,4,4,3,2,3,5,4,4,0.843274043
+P150,Menos de 18,8/13/04,Feminino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,5,4,3,4,3,3,3,4,3,3,3,4,2,4,2,4,4,3,4,4,4,4,3,4,4,4,4,5,4,4,5,5,4,0.731925055
+P151,25-34,5/20/89,Masculino,Solteiro(a),Branco,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,3,2,2,4,5,3,5,4,3,2,3,4,4,2,5,3,4,3,2,3,3,3,4,3,5,3,5,2,4,4,5,3,5,0.999603096
+P152,45-54,8/5/68,Feminino,Viúvo(a),Branco,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,4,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,3,4,4,4,3,4,4,4,4,4,3,4,4,4,4,4,3,4,4,0.350736187
+P153,18-24,7/15/02,Feminino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,3,3,3,4,4,4,5,3,3,3,4,3,2,3,3,4,4,3,3,4,4,3,2,3,3,4,5,4,2,4,4,4,5,0.7740842
+P154,Menos de 18,11/25/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,1,4,3,1,4,3,2,2,4,4,4,4,4,2,4,3,3,4,4,4,4,4,5,2,4,4,4,3,5,1,4,1.052208562
+P155,Menos de 18,7/2/04,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,2,3,2,2,3,4,2,3,4,4,4,3,2,2,4,3,3,4,4,4,4,4,2,2,4,3,4,4,2,2,3,0.855885321
+P156,Menos de 18,8/12/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,2,4,3,2,4,4,2,2,4,4,2,3,4,2,4,3,2,4,4,3,3,4,4,2,4,2,3,4,4,2,5,0.913739916
+P157,Menos de 18,4/11/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,3,2,3,2,3,3,4,3,3,4,3,3,4,3,3,4,3,4,4,3,4,3,4,3,2,4,3,4,4,3,4,4,0.639320075
+P158,18-24,12/18/99,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Deitada,4,3,4,4,4,3,4,5,4,4,4,2,3,4,4,4,4,4,3,4,3,3,3,4,3,4,4,5,3,4,2,4,4,5,4,4,0.701472374
+P159,Menos de 18,10/10/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,3,4,4,1,2,4,2,2,2,5,4,4,4,1,2,4,3,4,3,4,4,5,4,1,2,4,4,5,4,1,1,4,1.244671181
+P160,Menos de 18,8/5/05,Masculino,Solteiro(a),Branco,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,2,3,2,2,3,2,1,4,3,2,2,3,3,5,4,2,1,4,3,2,3,3,2,5,4,2,1,5,4,5,4,3,1,4,1.193899839
+P161,Menos de 18,12/13/04,Feminino,Solteiro(a),Branco,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,1,1,2,3,3,3,4,2,3,1,3,4,5,1,3,4,5,4,3,3,2,2,4,3,1,2,4,4,2,3,3,4,5,2,1,2,1.207121724
+P162,25-34,6/9/92,Masculino,Solteiro(a),Negro,Classe baixa,Bissexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,2,2,2,3,5,3,3,5,5,3,1,2,4,2,5,3,3,5,5,2,2,4,4,3,5,4,3,5,5,3,5,3,3,5,5,1.229272594
+P163,Menos de 18,3/6/07,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Aplicativo Question,3,4,3,3,4,3,4,4,4,3,3,2,4,4,3,3,4,4,3,4,4,3,3,4,3,4,3,4,3,4,3,4,3,4,3,4,0.55990362
+P164,Menos de 18,7/1/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,3,2,4,2,2,3,4,2,2,4,4,4,4,2,2,4,4,2,3,4,4,4,4,4,2,4,2,4,4,5,1,4,1.024695077
+P165,Menos de 18,3/16/05,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,2,2,2,2,2,2,2,1,4,2,2,2,2,2,3,2,2,2,2,2,1,2,2,2,2,2,2,2,3,2,3,1,2,1,5,2,0.747482547
+P166,18-24,4/2/01,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,5,3,2,2,1,4,5,5,5,3,3,3,4,2,5,4,2,4,4,2,3,2,4,3,5,5,5,4,4,3,5,3,4,5,5,1.171080088
+P167,25-34,3/11/90,Masculino,União estável,Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,3,3,3,3,3,4,4,3,2,3,4,4,3,3,3,4,4,2,3,3,3,3,3,4,3,4,4,4,3,3,3,4,4,0.576662538
+P168,25-34,5/23/93,Masculino,Casado(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),2,1,1,2,2,3,2,1,1,5,1,1,1,3,3,3,2,1,3,5,1,1,1,2,2,3,2,1,1,5,3,4,3,1,1,5,1.327068616
+P169,Menos de 18,10/29/04,Masculino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,2,3,3,4,2,2,3,2,2,3,3,4,4,3,2,2,3,2,2,3,3,3,4,3,3,2,2,4,4,4,2,2,2,4,0.798311711
+P170,Menos de 18,2/16/05,Feminino,Solteiro(a),Pardo,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,2,3,2,1,4,4,3,3,4,4,3,4,3,1,5,3,2,4,3,4,3,4,2,2,5,4,3,4,2,1,5,1.105182596
+P171,Menos de 18,12/13/04,Feminino,Solteiro(a),Branco,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,2,5,4,1,4,5,2,4,4,2,1,5,3,4,5,4,3,5,3,2,5,5,3,5,5,5,2,5,3,5,5,5,4,5,1.28328695
+P172,Menos de 18,9/2/04,Feminino,Solteiro(a),Amarelo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,3,4,4,3,4,5,4,3,3,4,3,4,4,3,4,4,3,3,4,4,4,5,4,3,4,5,3,4,4,3,4,5,0.637455258
+P173,Menos de 18,3/10/05,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,3,4,3,3,2,2,3,3,2,2,4,3,2,3,2,2,3,3,2,4,4,4,2,3,2,2,4,3,3,3,4,3,4,0.792824967
+P174,18-24,3/17/00,Masculino,Solteiro(a),Não me identifico,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),2,2,2,2,2,5,2,4,5,5,2,2,4,2,3,5,2,4,5,5,2,4,2,2,3,5,2,4,5,5,4,5,2,4,5,5,1.34045716
+P175,Mais de 55,11/12/66,Masculino,Casado(a),Pardo,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,4,3,3,4,4,4,4,2,3,3,4,4,4,4,4,4,4,4,3,3,3,4,4,4,4,4,4,4,3,4,4,4,4,4,3,4,0.524782646
+P176,Menos de 18,3/7/05,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,A utilização do Kahoot!,4,5,3,3,4,1,4,2,3,5,4,2,2,4,5,4,4,2,3,5,4,2,3,4,5,4,4,2,3,5,5,5,4,2,5,5,1.174801571
+P177,Menos de 18,10/1/04,Masculino,Solteiro(a),Não me identifico,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,1,3,5,3,4,4,3,2,4,4,3,3,3,3,5,3,4,4,4,3,4,3,4,4,5,3,5,4,5,3,5,0.894427191
+P178,Menos de 18,10/3/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,4,4,5,4,3,3,5,4,4,4,3,4,5,3,4,3,5,4,4,4,3,4,5,5,4,4,5,4,5,4,4,3,4,0.673771663
+P179,Menos de 18,2/2/05,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,3,4,2,4,3,4,5,5,4,3,3,4,3,4,3,4,5,4,3,3,3,4,4,4,3,4,4,4,4,3,3,4,5,0.786291274
+P180,35-44,2/6/77,Feminino,Solteiro(a),Pardo,Classe média baixa,Homossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,3,3,4,5,1,3,5,5,5,3,2,2,5,5,5,4,4,5,5,2,4,5,5,3,5,5,5,5,5,4,5,4,5,4,5,1.125110224
+P181,Menos de 18,8/28/04,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,4,1,4,3,2,4,4,4,4,5,5,4,5,2,4,5,4,4,4,5,4,4,3,3,2,5,3,5,5,4,3,5,1.018480038
+P182,Menos de 18,4/21/04,Masculino,Solteiro(a),Branco,Classe média alta,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,3,2,4,4,2,3,4,2,2,4,3,3,4,4,2,3,3,2,4,4,3,4,5,4,2,4,3,4,4,4,2,4,0.888640838
+P183,Menos de 18,9/20/04,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,2,3,2,2,3,2,4,4,2,2,2,4,2,4,4,2,3,3,2,2,3,4,2,4,4,2,4,4,3,4,4,2,4,4,0.894427191
+P184,Menos de 18,9/8/20,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0.166666667
+P185,Menos de 18,6/5/06,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,5,4,5,2,4,2,4,2,5,5,4,3,5,5,5,5,4,2,5,5,5,4,2,3,4,5,5,2,4,5,4,5,4,4,5,4,1.093995154
+P186,Menos de 18,5/27/06,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Quiz no Google Form,3,2,4,5,4,3,4,2,4,3,4,3,3,5,5,4,4,3,4,4,2,2,4,5,5,4,4,5,4,4,2,5,5,5,5,5,1.018480038
+P187,45-54,7/11/69,Feminino,Casado(a),Pardo,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,3,4,3,3,3,2,3,3,3,3,3,2,2,3,3,3,3,4,3,3,3,2,3,3,3,4,3,4,3,3,3,4,4,2,3,3,0.55990362
+P188,Menos de 18,10/11/05,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,4,4,2,4,2,2,4,4,2,2,5,4,4,4,1,2,4,3,2,4,5,4,4,3,2,2,4,3,4,4,2,2,4,1.105182596
+P189,Menos de 18,7/20/04,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,3,3,4,4,3,4,4,3,2,4,2,4,5,3,3,3,4,4,4,4,4,3,4,4,2,4,4,4,3,4,3,5,0.766356045
+P190,Menos de 18,2/16/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,A utilização do Kahoot!,3,3,3,3,2,2,3,2,4,2,3,3,2,3,2,3,3,2,4,2,3,3,3,3,3,3,3,2,3,2,2,3,3,3,3,3,0.554204707
+P191,Menos de 18,10/6/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,3,4,3,4,2,2,5,4,3,3,5,4,4,4,2,3,5,4,3,3,5,4,4,4,2,2,4,4,5,5,3,2,5,0.993630508
+P192,Menos de 18,9/7/04,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,3,1,4,3,3,4,4,3,3,4,3,5,4,3,1,3,3,1,4,5,3,4,5,3,2,2,3,4,4,4,3,5,1.046156988
+P193,Menos de 18,1/21/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,2,3,4,3,2,3,3,3,2,2,2,2,3,2,3,2,3,4,3,2,2,1,3,4,3,3,2,2,4,2,3,3,2,3,4,0.749073502
+P194,Menos de 18,7/23/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,4,4,4,3,5,4,3,3,3,4,4,4,3,4,4,5,3,4,4,4,5,4,3,4,5,4,4,4,5,4,5,2,3,0.723198364
+P195,Menos de 18,10/30/04,Feminino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,3,4,3,3,4,3,3,3,4,3,2,4,3,4,4,3,3,4,3,2,4,4,3,4,4,3,3,4,3,4,4,3,3,4,0.592947975
+P196,Menos de 18,8/16/04,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,4,4,5,5,3,5,5,1,2,5,5,3,3,1,2,5,3,2,5,5,5,5,4,4,3,5,5,5,4,4,3,5,1.253249744
+P197,Menos de 18,7/12/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,3,3,3,3,4,2,5,4,3,4,4,3,2,3,4,2,4,3,4,3,3,3,2,3,4,3,4,3,2,4,4,4,5,0.798311711
+P198,18-24,7/31/00,Masculino,Solteiro(a),Negro,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,4,5,4,5,5,5,5,5,5,3,5,5,3,3,5,5,5,5,3,5,5,5,3,3,5,5,5,5,4,4,4,5,5,5,0.7740842
+P199,Menos de 18,2/9/07,Feminino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Aplicativo Question,1,3,4,3,2,3,1,4,3,5,3,2,4,3,3,2,4,3,4,4,2,4,3,3,3,2,3,2,3,3,4,4,4,4,2,4,0.937321412
+P200,25-34,2/18/89,Feminino,Solteiro(a),Não me identifico,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,4,4,4,4,4,5,3,3,3,4,4,4,4,4,4,5,3,2,4,4,4,4,4,4,4,5,4,4,4,4,4,5,0.603560862
+P201,Menos de 18,3/14/07,Feminino,Solteiro(a),Negro,Classe média baixa,Prefiro não declarar,Aplicativo Question,2,2,4,2,2,3,2,1,2,2,2,4,4,4,3,1,2,2,3,2,4,2,2,4,4,2,3,2,4,3,3,2,2,1,4,2,0.967323258
+P202,Mais de 55,9/10/65,Masculino,Casado(a),Pardo,Classe média,Bissexual,Leitura da história: As aventuras de Oxy e Geny - Uma aventura pelo sistema cardiovascular humano.,5,2,2,2,3,2,4,3,3,2,3,4,4,3,2,3,2,3,4,3,4,4,4,3,3,3,2,3,3,4,4,4,3,1,3,4,0.874234359
+P203,25-34,1/6/92,Masculino,Casado(a),Branco,Classe média,Prefiro não declarar,Breve aula sobre ergonomia para educadores,5,4,4,3,5,4,4,5,4,3,5,3,4,5,5,3,3,4,3,3,1,4,5,4,3,4,5,4,3,3,5,4,5,5,4,3,0.937321412
+P204,Menos de 18,11/3/04,Masculino,Solteiro(a),Não me identifico,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,3,3,4,3,4,2,1,3,4,4,2,3,4,3,4,4,2,4,3,3,4,4,3,4,4,4,4,4,3,3,4,2,3,4,4,0.792824967
+P205,Menos de 18,9/7/04,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,1,1,5,4,2,3,2,1,5,5,2,2,3,4,3,4,2,1,5,4,2,4,3,4,3,4,3,5,5,4,2,5,4,5,5,5,1.37898053
+P206,Menos de 18,8/13/05,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,4,3,4,4,3,3,4,4,2,2,3,3,3,4,4,4,5,4,2,4,3,3,3,3,4,4,5,3,4,3,4,3,5,0.844684594
+P207,18-24,4/26/01,Masculino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,2,4,4,2,3,5,4,5,4,1,2,4,4,4,4,5,1,4,2,1,4,4,4,4,4,4,2,4,4,5,4,4,3,4,1.133543398
+P208,Menos de 18,1/31/05,Feminino,Solteiro(a),Pardo,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,4,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,0.280305955
+P209,Menos de 18,3/3/07,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Aplicativo Question,4,2,4,3,3,2,2,4,4,3,3,3,4,2,4,2,3,3,4,3,2,2,2,3,3,2,2,4,4,4,4,4,2,3,4,4,0.840917866
+P210,Menos de 18,9/4/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,4,4,5,2,3,2,4,3,4,2,3,4,4,2,3,2,4,4,4,3,4,4,5,2,2,2,2,3,5,3,4,2,5,5,1.07902072
+P211,Menos de 18,7/27/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,3,1,4,2,4,5,3,2,3,3,3,5,3,2,4,5,3,4,4,3,4,5,4,2,3,5,2,5,3,3,4,5,1.055221334
+P212,Menos de 18,1/25/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,2,3,3,4,4,3,4,2,4,3,2,3,3,3,4,4,3,2,3,3,3,4,3,3,5,4,4,4,3,2,5,3,4,0.792824967
+P213,18-24,11/25/00,Masculino,Solteiro(a),Negro,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,3,2,4,4,4,4,3,5,5,2,3,2,5,5,4,4,3,5,5,4,4,3,4,4,5,4,2,3,4,5,5,4,2,5,5,1.028174527
+P214,Menos de 18,12/16/06,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Aplicativo Question,5,5,4,5,4,2,4,1,4,4,5,4,4,5,4,5,5,3,4,5,5,4,5,5,5,5,4,5,3,5,4,5,4,2,5,5,0.996422171
+P215,Menos de 18,8/4/04,Masculino,Solteiro(a),Pardo,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,5,5,5,4,3,5,3,5,5,5,3,3,5,4,5,5,5,5,5,5,4,5,5,5,5,5,3,5,4,4,5,5,3,5,5,0.774596669
+P216,Menos de 18,6/30/05,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,5,3,2,3,3,4,5,3,3,3,4,3,4,4,3,4,5,3,3,4,5,3,5,4,3,4,5,3,4,4,3,4,4,0.792824967
+P217,45-54,3/4/71,Masculino,Casado(a),Branco,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,4,4,2,3,4,2,3,5,3,3,5,2,2,4,4,4,3,4,3,3,4,2,3,4,4,4,3,4,2,3,5,4,3,4,4,3,0.874234359
+P218,Menos de 18,7/26/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,A utilização do Kahoot!,4,2,4,3,2,2,4,4,4,4,3,3,4,4,3,3,2,3,5,3,3,4,3,3,2,4,2,3,3,3,4,4,4,3,5,4,0.828078671
+P219,Menos de 18,10/6/04,Feminino,Solteiro(a),Branco,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,2,3,5,1,1,3,1,5,3,2,2,2,5,1,4,3,1,5,3,1,2,5,5,2,4,2,5,4,3,1,4,5,1,5,3,1.511857892
+P220,Menos de 18,7/26/06,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,4,4,5,4,5,3,4,5,5,4,3,3,3,3,5,5,5,3,5,5,4,4,4,5,4,4,5,4,4,4,4,5,3,4,5,4,0.736788398
+P221,Menos de 18,11/9/04,Masculino,Solteiro(a),Negro,Classe média baixa,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,3,3,3,2,4,2,3,4,4,2,2,4,4,3,3,2,3,4,4,2,4,3,4,4,3,3,3,5,4,3,4,3,3,5,0.828078671
+P222,Menos de 18,10/26/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,2,4,4,1,4,1,1,5,5,2,2,5,4,5,5,2,4,5,4,2,4,4,4,5,4,3,2,5,4,4,4,4,1,5,1.360147051
+P223,Menos de 18,4/5/05,Feminino,Solteiro(a),Branco,Classe média baixa,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,5,4,2,4,1,5,4,3,1,1,4,4,2,4,1,5,4,3,2,5,4,4,2,4,2,4,4,3,4,4,2,5,4,1.242118007
+P224,Menos de 18,3/30/07,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Quiz no Google Form,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0
+P225,25-34,2/18/89,Feminino,Solteiro(a),Pardo,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,3,4,4,4,4,2,4,4,4,4,2,4,4,4,4,2,4,4,4,2,4,4,4,4,4,4,4,5,4,4,4,2,4,5,0.76997217
+P226,Menos de 18,5/13/04,Masculino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,4,4,4,3,4,2,3,3,3,2,3,3,4,3,3,3,3,2,4,4,4,4,4,3,3,2,2,3,4,4,4,3,3,3,0.691788572
+P227,Menos de 18,7/14/06,Feminino,Solteiro(a),Pardo,Classe média,Heterossexual,Quiz no Google Form,3,3,2,3,4,2,3,3,4,4,2,2,4,4,3,2,2,2,4,4,2,3,3,3,4,2,2,3,2,5,4,2,2,3,4,4,0.894427191
+P228,25-34,2/22/91,Feminino,União estável,Branco,Classe média baixa,Heterossexual,Jogo de xadrez online,4,4,4,4,3,2,3,4,4,2,3,2,4,3,2,3,2,4,2,3,3,4,3,3,2,4,2,2,2,3,4,3,3,2,4,4,0.826159599
+P229,18-24,9/8/00,Masculino,Solteiro(a),Pardo,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,3,5,5,5,5,5,5,5,5,5,5,0.333333333
+P230,35-44,9/10/86,Masculino,Casado(a),Negro,Classe baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,5,2,4,4,2,3,4,4,5,5,4,1,4,4,3,4,4,2,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,1,5,0.980362745
+P231,Menos de 18,12/6/04,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,4,4,4,4,5,2,5,5,4,4,3,5,4,5,5,2,5,5,4,4,4,5,4,5,5,2,5,5,4,5,5,4,5,5,0.888640838
+P232,25-34,12/30/95,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,5,5,4,4,4,5,5,4,4,4,5,4,4,4,4,4,3,5,4,3,4,5,4,4,4,4,4,5,4,4,5,4,4,5,5,0.566246343
+P233,Menos de 18,9/11/04,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,3,2,2,2,2,2,2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,4,2,0.507092553
+P234,Menos de 18,8/27/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,3,3,3,4,4,4,4,2,2,4,4,4,4,2,4,4,3,2,4,4,3,4,4,5,3,4,4,4,4,5,4,5,0.833333333
+P235,25-34,1/13/92,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),4,4,4,4,4,4,4,5,4,4,4,4,4,4,4,3,3,5,5,4,3,4,4,4,4,3,4,5,4,4,4,4,4,5,5,4,0.53154462
+P236,25-34,9/8/94,Masculino,Casado(a),Pardo,Classe média baixa,Heterossexual,Segurança da Informação (evento CTF e StarsCTF - dia 26),5,3,3,3,4,3,3,1,4,5,3,3,4,3,3,2,3,1,4,5,3,3,2,4,4,2,2,4,5,5,5,3,3,1,3,5,1.166666667
+P237,Menos de 18,1/2/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,2,4,3,2,2,2,4,3,4,2,2,4,3,4,4,2,4,4,3,2,4,4,3,4,4,2,2,4,4,4,4,4,4,4,0.888640838
+P238,Menos de 18,2/10/05,Masculino,Solteiro(a),Pardo,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,4,4,4,4,2,4,3,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0.398409536
+P239,Menos de 18,11/1/04,Masculino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,4,3,4,4,2,4,2,2,2,4,3,3,3,4,3,3,2,3,3,4,3,4,3,4,4,3,5,2,4,4,5,3,4,1,3,0.950772451
+P240,18-24,7/15/02,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Segurança da Informação (evento CTF e StarsCTF - dia 26),3,3,4,4,3,2,4,3,3,3,3,2,3,4,3,3,3,3,4,5,3,3,4,4,3,3,3,3,4,3,3,4,4,3,4,5,0.682548911
+P241,Menos de 18,8/17/04,Feminino,Solteiro(a),Branco,Classe média,Prefiro não declarar,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,4,3,3,4,4,2,4,1,4,4,3,3,4,5,4,3,4,1,4,4,3,4,4,5,4,4,4,1,3,5,4,4,4,3,5,5,1.049565292
+P242,Menos de 18,12/24/05,Feminino,Solteiro(a),Branco,Classe média,Heterossexual,Atividades que Fez nesta semana para aprender Vetor Velocidade e Vetor Aceleração,5,5,3,5,4,1,5,5,3,5,5,4,4,5,4,1,5,4,4,5,5,4,5,5,4,1,5,5,5,5,4,2,5,5,5,5,1.221500508
+P243,Menos de 18,5/10/04,Masculino,Solteiro(a),Não me identifico,Classe média,Heterossexual,A utilização do Kahoot!,4,2,2,4,2,2,2,4,4,4,4,2,4,4,4,4,4,4,4,4,4,2,2,4,4,4,3,4,4,4,2,2,4,1,4,4,0.985610761
+P244,Menos de 18,12/29/04,Feminino,Solteiro(a),Negro,Classe média,Heterossexual,A utilização do Kahoot!,4,4,2,5,3,5,4,2,4,5,4,2,1,4,3,5,4,1,4,3,3,2,4,5,5,5,4,1,2,4,4,5,4,2,4,5,1.274910517
+P245,25-34,2/1/93,Feminino,Casado(a),Branco,Classe média,Heterossexual,Breve aula sobre ergonomia para educadores,3,5,5,5,5,5,5,5,5,5,5,3,5,4,3,2,2,4,5,5,5,5,3,5,5,5,5,5,5,5,5,4,4,5,5,5,0.91025899
+P246,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,4,4,5,5,3,1,5,5,2,5,5,1,5,4,3,4,5,1,5,5,5,5,2,4,5,5,2,5,5,5,5,3,5,5,1.434274331
+P247,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,2,2,4,4,4,5,3,2,2,2,4,4,4,4,4,4,2,3,2,2,2,4,4,4,3,2,3,2,2,2,4,2,4,0.999603096
+P248,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,5,4,4,4,4,4,4,3,4,4,3,4,5,5,5,5,5,5,5,4,5,4,4,3,3,3,3,4,4,4,5,3,4,0.844684594
+P249,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,3,3,2,2,4,1,4,3,4,3,3,2,3,2,3,3,4,4,4,3,2,3,3,3,3,4,4,4,3,2,3,4,2,3,0.806225775
+P250,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,3,4,1,3,4,4,3,4,4,3,4,4,3,3,4,3,4,4,3,4,3,3,4,3,3,4,4,3,4,4,3,4,0.696362431
+P251,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,2,2,2,4,2,2,2,4,4,2,4,2,4,1,2,2,4,4,2,4,2,2,2,1,1,4,4,2,4,2,2,3,1.069044968
+P252,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,3,3,4,4,4,4,4,4,2,3,3,2,2,4,4,4,4,2,3,3,4,3,4,4,4,4,3,4,4,4,3,4,4,4,0.696932052
+P253,,,,,,,,Gamificação estereótipo agressividade,2,2,2,2,4,2,2,2,2,2,2,2,2,4,2,4,2,2,2,2,2,2,4,2,4,2,2,2,2,2,2,4,2,4,2,2,0.802772972
+P254,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,4,2,3,4,5,3,2,2,4,3,4,3,2,4,3,2,3,2,4,5,3,2,4,3,2,2,2,3,4,3,2,4,3,2,0.9258201
+P255,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,4,3,4,3,3,4,4,2,4,2,2,4,2,3,2,3,2,3,2,3,4,3,4,3,2,2,3,2,3,4,2,2,3,0.828078671
+P256,Menos de 18,,Feminino,,,,,Gamificação estereótipo agressividade,5,1,4,4,5,4,5,4,5,5,2,3,4,1,3,5,3,4,5,3,2,4,5,3,5,3,4,2,1,3,4,5,4,5,1,4,1.315354983
+P257,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,3,2,4,3,4,4,2,2,4,4,4,4,4,3,3,2,3,3,3,3,4,4,5,5,2,3,3,4,4,4,3,5,5,2,3,3,0.906326967
+P258,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,4,3,4,3,2,4,4,4,3,4,4,3,4,3,3,4,4,3,4,3,4,3,3,4,3,3,4,3,4,3,3,2,4,0.608797931
+P259,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,4,5,4,4,4,5,4,4,3,4,4,4,2,4,4,4,3,4,4,3,4,4,3,3,3,4,3,3,4,4,4,3,4,5,4,0.649175301
+P260,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,5,5,5,5,4,5,5,5,2,5,5,5,5,2,5,5,5,1,5,5,5,5,4,5,5,5,1,5,5,5,5,4,4,4,1.268357268
+P261,Menos de 18,,Feminino,,,,,Gamificação estereótipo agressividade,5,3,3,3,5,4,2,2,4,5,4,4,3,1,4,2,2,3,4,4,3,3,5,3,3,3,3,4,4,3,3,5,3,2,5,3,1.021980648
+P262,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,3,4,3,4,3,2,3,1,3,2,3,1,4,3,4,3,1,3,3,2,2,4,3,3,3,1,3,3,3,1,4,3,2,3,1,0.974272215
+P263,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,5,4,5,2,5,2,3,5,4,4,4,4,5,5,2,3,4,2,4,5,4,4,4,2,3,4,3,2,2,4,2,4,1,1,4,1.206792943
+P264,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,5,3,4,4,5,4,4,4,4,5,4,2,3,5,4,3,4,3,4,4,5,5,5,4,4,3,3,3,4,4,3,5,4,3,0.833333333
+P265,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,1,3,4,5,4,5,4,4,4,3,3,4,3,4,4,4,4,3,3,4,4,5,4,4,4,5,4,3,4,4,5,4,4,4,4,0.761681515
+P266,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,2,4,3,2,3,4,4,5,4,4,4,3,5,4,4,4,4,5,3,4,3,2,3,4,4,4,4,3,4,3,2,3,4,4,4,0.833333333
+P267,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,2,3,2,4,3,3,4,4,2,3,3,2,4,4,4,4,4,4,3,2,2,4,4,4,4,4,5,3,4,2,4,5,0.906326967
+P268,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,5,5,3,5,5,1,5,5,1,5,5,3,5,5,1,3,5,5,5,5,3,5,5,1,1,1,3,5,5,3,5,5,1,3,1.666666667
+P269,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,5,2,2,4,2,4,4,3,3,4,2,4,4,4,4,4,3,2,3,5,2,4,2,2,4,3,3,4,5,3,4,2,3,5,4,3,0.990029661
+P270,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,4,4,5,5,4,3,3,3,3,4,4,4,5,4,3,3,4,4,4,4,4,5,3,3,3,3,4,4,4,4,4,4,3,3,0.659485129
+P271,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,1,2,4,2,4,1,4,4,3,2,2,4,2,2,2,4,3,4,1,3,3,3,2,2,3,3,2,2,4,2,2,2,2,3,0.960737151
+P272,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,2,5,2,4,4,4,2,4,5,1,4,4,1,5,2,3,4,5,1,4,2,5,4,3,2,4,2,1,3,2,5,4,4,3,4,1.327068616
+P273,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,1,5,5,2,4,2,5,5,4,5,4,5,1,3,2,5,4,5,1,5,5,1,4,2,1,4,5,4,5,5,1,4,2,5,5,1.570309847
+P274,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,1,4,4,4,4,4,4,4,4,2,4,4,2,3,4,2,3,4,2,4,4,4,4,4,4,3,3,4,4,4,4,4,4,3,3,0.810153816
+P275,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,4,3,4,4,5,3,3,4,2,4,4,3,4,5,3,3,4,2,3,4,3,4,5,3,4,3,2,3,3,3,4,5,2,4,0.845154255
+P276,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,4,3,4,4,5,2,5,4,4,4,3,5,5,3,3,4,3,2,4,4,4,4,4,2,3,4,2,3,2,4,4,5,2,3,1.055221334
+P277,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,3,4,4,4,4,4,3,3,4,3,4,4,3,3,5,3,3,4,3,4,4,4,3,4,3,3,4,3,4,4,4,4,5,3,3,0.632455532
+P278,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,2,3,4,3,3,4,4,3,3,3,4,4,3,4,4,2,2,2,4,4,3,4,2,4,4,3,4,3,4,4,3,3,4,3,2,2,0.76997217
+P279,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,4,3,4,3,2,4,4,2,3,3,3,3,4,2,2,4,3,3,4,3,3,2,2,3,4,4,3,3,3,4,4,2,4,0.76011695
+P280,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,4,3,4,3,4,2,4,3,1,5,3,3,2,4,3,2,1,1,5,2,3,2,2,2,3,1,1,5,3,4,4,3,2,1,2,1.21465914
+P281,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,3,3,4,1,1,2,4,4,4,3,3,1,3,2,3,4,3,2,4,4,5,5,3,3,4,3,2,3,3,5,4,2,3,5,1.082325539
+P282,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,1,4,2,4,3,4,3,3,4,4,4,2,4,3,4,3,4,4,1,4,4,4,3,3,3,3,4,1,4,2,4,3,0.980362745
+P283,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,4,4,4,2,2,4,4,2,2,2,4,4,2,2,2,4,4,4,4,4,2,2,2,2,4,2,4,4,2,4,2,3,0.999603096
+P284,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,1,5,4,4,3,1,2,3,1,1,4,3,4,2,1,1,4,2,5,4,1,3,2,1,1,3,5,4,5,2,3,3,2,1,1.39015815
+P285,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,2,4,2,1,4,3,2,5,5,2,5,2,2,4,2,2,4,4,2,2,2,2,2,2,2,4,2,1,4,2,1,2,1,2,4,3,1.198875134
+P286,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,5,5,5,5,2,2,4,5,4,5,5,5,5,2,2,3,5,3,5,5,4,5,2,2,4,4,3,5,5,4,5,2,2,3,1.222474721
+P287,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,5,5,3,4,4,4,4,2,4,4,4,5,2,4,3,4,2,4,5,4,4,2,4,3,3,2,4,5,4,4,2,4,3,0.96444737
+P288,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,4,4,4,4,4,4,3,4,2,2,4,4,4,2,2,2,2,2,2,4,3,4,2,2,3,2,3,2,2,2,4,2,3,2,2,2,0.93052298
+P289,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,4,4,4,3,3,2,3,3,4,4,2,3,3,2,2,3,2,3,4,4,4,3,2,2,3,2,3,4,4,4,3,2,2,0.820375446
+P290,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,5,4,5,4,1,4,1,4,2,4,4,1,4,1,3,2,4,1,4,4,4,4,1,2,2,2,1,4,4,4,4,1,2,2,1.389301526
+P291,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,3,3,2,4,2,2,4,4,4,2,2,2,2,2,2,4,4,3,2,3,2,2,2,2,4,4,4,2,2,2,3,2,0.920231165
+P292,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,3,3,3,3,3,3,3,4,4,4,3,4,3,3,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,0.467176592
+P293,Menos de 18,,Feminino,,,,,Gamificação estereótipo agressividade,2,3,1,1,3,2,2,3,4,2,4,3,1,3,3,2,4,2,1,3,3,1,2,2,3,3,2,2,3,2,3,2,2,4,4,4,0.940702203
+P294,45-54,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,3,2,3,2,3,3,4,4,3,2,3,2,3,3,3,3,3,2,3,4,3,3,2,3,4,4,3,3,3,3,3,3,3,4,0.608797931
+P295,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,3,2,4,4,4,2,3,4,3,3,4,2,2,4,2,4,3,2,2,4,4,2,4,2,4,3,2,2,4,3,2,4,2,4,4,0.906326967
+P296,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,5,2,4,4,4,4,4,3,4,4,4,4,4,3,4,4,3,4,4,4,4,4,3,4,2,3,4,4,3,4,3,2,2,4,4,4,0.728119997
+P297,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,5,4,2,4,4,2,1,3,2,5,4,3,4,2,3,1,3,2,5,4,4,4,2,4,1,1,1,4,4,2,4,2,4,1,1,2,1.32617124
+P298,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,4,3,4,4,4,3,4,4,3,4,3,3,4,4,3,3,4,3,4,4,4,3,4,3,3,2,2,4,4,4,3,4,3,4,0.6094494
+P299,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,2,2,3,3,2,4,4,4,3,4,3,2,3,2,4,4,4,3,3,4,2,3,2,3,3,3,3,3,3,2,3,2,4,4,0.7740842
+P300,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,3,3,4,4,4,1,2,3,4,3,2,4,4,3,1,3,2,4,3,3,3,2,1,1,3,4,3,1,2,3,3,5,1,1.108409414
+P301,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,3,2,4,3,4,2,2,3,4,2,4,3,4,3,3,3,4,4,3,4,4,2,3,3,3,3,4,2,4,4,4,3,3,3,0.709907215
+P302,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,3,2,4,4,5,1,3,4,4,3,4,3,1,4,1,3,2,2,4,4,4,4,4,2,3,3,1,3,2,2,4,3,1,3,1,1.193899839
+P303,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,4,3,3,4,3,4,4,3,3,3,3,2,3,2,4,3,3,3,3,3,2,3,3,3,3,3,3,3,2,3,3,2,3,4,0.582822906
+P304,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,3,4,2,2,4,3,2,4,4,2,5,2,2,3,4,2,4,4,2,4,2,2,3,2,2,4,4,2,4,2,2,3,0.983998968
+P305,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,5,4,4,4,3,3,3,3,3,3,3,4,4,4,3,2,3,3,3,3,3,3,3,4,3,2,3,2,2,2,2,3,2,2,3,3,0.736249613
+P306,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,2,3,4,2,4,3,4,5,5,4,4,4,5,4,5,5,3,4,3,5,4,3,4,2,4,3,2,3,2,5,4,5,5,4,5,1.028174527
+P307,45-54,,Feminino,,,,,Gamificação estereótipo agressividade,5,1,5,4,5,5,5,4,3,5,1,5,5,5,5,2,3,3,5,1,5,4,5,5,2,3,2,4,1,2,4,5,5,3,3,2,1.45405836
+P308,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,2,3,5,3,5,1,3,3,2,3,3,1,4,5,2,3,3,2,1,3,4,3,3,2,3,2,2,2,4,4,4,5,1,2,1.150224271
+P309,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,5,3,4,4,5,5,1,3,3,1,3,5,4,1,4,1,3,1,3,2,3,3,4,3,2,3,1,1,1,3,4,5,4,1,3,1,1.396992234
+P310,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,5,5,5,5,5,1,3,3,5,5,3,4,5,5,1,5,4,5,5,5,5,5,5,1,5,3,5,5,4,4,4,5,1,3,1.424000624
+P311,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,5,3,5,3,2,3,2,2,3,2,3,3,2,3,2,1,2,5,1,1,2,2,2,2,2,1,5,2,2,2,2,3,2,2,1.183215957
+P312,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,5,4,4,4,4,4,2,2,4,3,2,4,4,1,2,3,3,4,3,3,4,4,3,4,5,3,5,2,2,3,4,4,3,3,2,5,1.018480038
+P313,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,3,4,2,4,4,3,2,3,4,2,3,2,4,3,3,2,4,4,2,3,2,2,3,2,2,4,2,3,4,2,2,3,0.854493259
+P314,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,3,5,4,5,5,3,4,4,3,4,4,4,2,5,2,3,4,2,3,4,5,5,5,3,2,3,2,4,4,4,4,4,3,3,0.993630508
+P315,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,2,4,5,5,5,2,3,2,2,2,4,4,4,4,2,2,4,4,4,4,4,4,4,2,3,3,2,4,4,4,4,4,2,2,1.021980648
+P316,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,3,4,4,4,2,4,5,4,4,3,3,2,3,2,4,4,4,3,3,4,4,4,1,2,4,4,2,3,4,4,4,2,5,5,1.049565292
+P317,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,4,4,4,4,4,3,2,3,4,3,3,2,2,4,4,4,3,3,4,4,4,2,3,5,4,4,4,5,4,4,2,4,4,0.806225775
+P318,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,4,5,4,5,5,1,3,4,3,4,4,4,4,4,1,3,4,4,4,4,4,4,4,1,1,3,4,4,4,4,4,4,3,3,1.052208562
+P319,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,4,4,3,3,4,3,4,3,4,4,3,4,3,4,3,4,3,3,4,3,3,3,4,2,3,2,3,2,2,2,3,4,2,3,0.696932052
+P320,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,3,5,2,3,4,2,3,4,2,4,4,2,3,4,2,3,3,2,3,4,2,3,4,3,2,3,2,4,4,2,3,4,2,2,0.894427191
+P321,45-54,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,5,5,5,5,5,3,3,5,3,5,5,5,5,5,3,3,5,1,5,5,5,5,5,3,3,5,1,5,5,5,4,5,3,3,1.282358937
+P322,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,3,4,5,5,4,4,3,4,5,5,4,4,4,4,3,2,4,4,3,3,4,4,3,3,4,4,4,3,2,4,4,4,4,3,4,0.76011695
+P323,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,2,3,3,4,3,4,4,4,4,3,4,4,4,3,4,4,4,4,4,4,3,4,3,4,4,4,3,3,1,4,4,3,4,4,2,3,0.736788398
+P324,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,3,4,2,4,4,4,4,2,3,4,2,2,4,4,4,5,2,5,4,3,3,4,2,4,5,2,4,4,4,4,4,2,3,0.96937224
+P325,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,4,1,1,2,4,3,2,4,3,3,4,2,4,2,4,2,4,4,5,2,2,1,1,5,1,4,3,5,2,2,2,1,4,3,5,1.317465098
+P326,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,1,3,4,1,3,4,2,3,3,3,4,5,1,2,4,2,4,4,2,3,5,2,3,2,2,3,4,2,4,5,1,1,1.217595862
+P327,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,0.291411453
+P328,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,1,1,1,3,3,3,3,3,3,3,3,3,3,2,3,3,4,1.035864795
+P329,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,4,4,4,4,2,2,4,4,2,4,4,2,4,4,2,3,4,3,4,3,4,4,3,4,3,3,2,4,3,3,4,3,2,3,0.806225775
+P330,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,3,4,4,5,5,5,3,3,4,2,4,4,4,4,4,2,3,3,2,4,4,4,4,4,2,4,3,2,4,4,5,4,4,2,3,0.906326967
+P331,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,3,2,3,3,2,3,2,4,3,3,4,3,3,4,2,2,4,2,2,4,3,4,3,3,2,1,2,2,4,2,3,2,2,4,2,3,0.831903535
+P332,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,3,2,3,3,2,3,2,4,3,3,4,3,3,4,2,2,4,2,2,4,3,4,3,3,2,1,2,2,4,2,3,2,2,4,2,3,0.831903535
+P333,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,4,2,2,2,4,4,2,4,4,4,4,3,4,3,4,2,4,4,4,3,2,2,4,4,2,4,3,3,2,2,2,4,4,2,4,0.920231165
+P334,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,2,4,4,5,5,5,5,5,5,5,4,5,5,5,5,5,5,2,2,2,5,3,3,3,3,3,3,3,3,3,3,3,4,2,1.227657467
+P335,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,2,3,5,5,3,1,5,3,2,3,1,2,3,2,2,4,3,5,3,3,4,3,3,3,4,3,3,3,3,3,4,1,2,3,1.055221334
+P336,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,3,4,4,3,3,3,3,4,4,4,4,4,2,3,3,3,4,4,2,2,3,2,3,3,4,3,3,3,3,3,2,2,0.736788398
+P337,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,3,3,1,2,2,1,2,1,1,4,3,3,3,4,1,1,4,4,3,4,1,2,4,1,1,4,4,4,3,1,3,4,1,2,1.229272594
+P338,,,,,,,,Gamificação estereótipo agressividade,5,3,3,3,2,4,4,3,3,3,3,3,3,2,4,4,3,3,3,2,3,3,2,2,3,3,3,3,3,3,4,2,3,4,3,3,0.673771663
+P339,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,3,4,4,4,3,4,3,4,4,3,4,4,3,5,5,2,5,4,3,3,4,4,4,3,2,5,4,3,3,5,4,4,0.821825301
+P340,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,3,4,4,4,1,4,3,2,3,4,4,4,4,2,3,4,2,3,3,4,4,2,4,3,3,2,3,3,4,4,4,4,4,0.855885321
+P341,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,4,4,4,4,4,3,4,2,4,4,2,1,2,4,3,2,4,1,4,4,2,2,4,2,3,2,2,4,2,4,4,4,4,4,1.089633694
+P342,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,3,3,4,5,4,4,2,5,4,4,4,4,4,4,4,2,4,4,4,2,4,5,4,4,2,4,3,4,4,4,5,4,4,2,4,0.840917866
+P343,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,5,4,4,5,5,5,4,5,5,5,5,5,5,5,5,5,5,5,2,5,5,5,5,5,5,5,5,2,5,5,5,5,5,5,5,0.731925055
+P344,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,2,4,4,3,3,3,3,3,4,2,4,2,2,3,4,4,3,2,2,4,2,3,4,4,3,3,2,2,2,3,0.840917866
+P345,25-34,,,,,,,Gamificação estereótipo agressividade,2,2,3,2,5,3,2,3,2,3,3,2,3,5,3,2,3,2,3,2,3,2,4,3,2,3,2,2,2,3,2,4,3,2,3,2,0.821825301
+P346,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,4,4,4,3,3,4,4,2,4,4,3,3,4,3,4,4,3,3,4,3,3,3,2,2,4,4,4,4,3,3,0.694650763
+P347,Mais de 55,,Feminino,,,,,Gamificação estereótipo agressividade,4,4,5,4,4,4,4,4,4,5,4,4,5,5,4,4,3,3,4,3,4,4,4,4,3,3,3,4,4,4,3,4,4,4,3,3,0.592947975
+P348,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,3,3,4,4,4,4,1,3,4,4,2,4,3,3,4,4,3,4,4,4,4,4,4,4,4,4,4,4,3,4,4,4,4,4,4,4,0.676123404
+P349,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,1,4,3,5,4,5,3,4,3,2,4,3,5,3,4,3,2,3,2,4,4,4,3,3,2,2,3,2,4,4,5,5,4,4,4,1.02662956
+P350,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,4,3,4,4,3,4,4,4,4,4,3,3,4,3,4,4,4,4,4,3,4,4,3,3,4,4,4,4,3,4,0.524782646
+P351,Mais de 55,,Masculino,,,,,Gamificação estereótipo agressividade,4,1,4,4,5,2,5,3,3,3,4,3,3,1,4,4,4,3,4,2,4,4,4,3,3,4,4,3,1,4,4,5,3,4,4,3,1.024695077
+P352,45-54,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,4,4,5,1,3,4,1,4,4,1,4,5,1,2,4,1,4,4,4,3,2,4,2,4,1,3,5,4,3,5,2,2,1.32617124
+P353,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,5,2,4,1,1,3,5,5,5,5,2,4,1,2,2,4,4,5,5,2,4,2,2,2,2,4,4,5,2,4,1,2,3,1.4040757
+P354,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,4,4,5,5,5,2,4,4,4,4,4,5,5,5,1,4,3,5,3,5,4,4,4,1,3,3,4,2,5,4,4,4,1,3,3,1.180193689
+P355,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,4,4,4,3,2,5,2,1,2,3,4,5,2,4,5,2,1,2,4,2,4,2,4,4,2,1,2,4,3,5,4,4,4,4,2,1.260826134
+P356,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,3,1,4,4,2,4,4,1,5,2,2,2,5,2,4,4,3,4,2,2,2,4,2,4,5,4,4,2,2,3,1.158817131
+P357,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,3,4,4,4,2,4,2,4,4,3,4,3,4,2,4,2,4,4,3,4,4,4,2,3,2,4,4,3,4,4,2,3,0.833333333
+P358,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,5,3,4,4,5,4,2,1,2,4,4,2,2,1,2,2,2,4,4,4,2,3,4,2,2,2,3,4,4,2,2,5,2,2,2,2,1.165645812
+P359,,,,,,,,Gamificação estereótipo agressividade,5,3,2,3,4,3,5,5,3,3,3,3,3,2,3,5,4,5,5,2,3,3,4,4,2,4,4,3,2,3,3,4,4,5,4,4,0.970599553
+P360,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,3,3,3,3,4,4,4,2,3,3,2,2,3,4,3,4,2,3,3,2,2,3,3,3,4,2,3,3,2,3,3,4,3,4,2,2,0.714920353
+P361,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,1,4,4,5,4,5,3,5,3,1,4,5,3,3,5,1,2,4,3,1,4,1,2,5,1,2,1,2,3,3,1,4,5,2,3,1.443925426
+P362,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,2,4,2,2,5,2,3,3,2,2,4,3,2,5,2,3,4,2,2,4,2,2,5,2,3,3,2,3,4,2,2,5,1,4,1.115546702
+P363,Mais de 55,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,4,5,5,5,4,3,5,5,5,4,5,2,5,2,4,3,5,1,4,5,4,5,1,4,4,5,1,4,5,4,5,2,2,4,1.39015815
+P364,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,2,3,4,3,3,3,4,2,3,2,2,4,4,4,4,4,4,3,2,2,4,2,4,4,4,4,2,2,2,3,0.888640838
+P365,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,5,2,4,3,4,4,4,1,2,4,2,4,3,2,2,4,1,2,4,3,2,3,3,2,4,2,2,4,2,2,3,3,4,4,1,2,1.073120357
+P366,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,2,2,4,4,2,4,4,3,3,4,2,4,4,4,4,4,3,3,4,3,4,4,2,4,4,3,3,3,2,4,4,2,3,4,4,3,0.792824967
+P367,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,3,2,4,4,4,4,4,2,4,2,3,4,4,2,4,4,4,4,2,4,4,4,2,4,4,4,4,3,4,4,0.810153816
+P368,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,2,2,4,4,4,4,4,2,4,4,4,4,3,2,4,4,4,4,4,4,4,3,2,4,4,4,4,4,4,4,0.766356045
+P369,,,,,,,,Gamificação estereótipo agressividade,5,2,4,5,5,4,4,3,5,4,5,5,5,3,5,4,3,5,5,2,4,4,4,5,3,4,5,5,1,5,5,4,4,4,3,5,1.035864795
+P370,,,,,,,,Gamificação estereótipo agressividade,3,3,4,4,3,3,5,3,3,3,3,4,4,3,4,5,3,3,3,3,4,4,3,4,5,3,3,3,3,4,4,3,4,5,3,3,0.696362431
+P371,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,4,3,4,3,4,2,1,5,3,4,3,4,2,4,3,2,4,4,4,4,4,3,3,3,3,3,2,3,3,3,4,4,3,4,4,0.828078671
+P372,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,2,4,4,4,4,4,3,4,4,4,4,4,3,4,3,3,3,4,3,4,4,3,3,2,2,3,3,3,3,3,3,4,4,3,3,0.644882172
+P373,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,4,3,3,3,4,4,3,3,2,3,3,4,4,4,4,3,3,3,4,3,3,3,2,4,3,3,3,3,3,3,2,4,4,3,0.624245576
+P374,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,2,5,4,3,5,4,3,3,2,2,5,4,4,4,3,3,2,4,2,5,4,2,4,4,2,3,2,2,5,4,4,4,3,2,2,1.099422648
+P375,18-24,,Feminino,,,,,Gamificação estereótipo agressividade,2,2,4,4,3,4,2,3,4,4,3,4,4,3,3,2,2,2,3,2,4,4,2,3,3,2,3,2,2,4,4,2,4,2,2,3,0.860047987
+P376,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,2,1,3,4,4,4,2,2,3,2,2,3,4,2,3,1,2,2,3,2,3,4,3,2,1,2,2,2,1,2,4,3,2,1,2,2,0.937321412
+P377,35-44,,Masculino,,,,,Gamificação estereótipo agressividade,3,4,2,2,2,4,4,4,4,4,4,2,2,4,4,2,4,3,5,4,2,2,2,4,4,4,3,3,4,2,2,2,4,4,2,2,0.990029661
+P378,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,3,2,2,3,2,2,3,3,3,2,2,4,3,4,4,4,4,2,2,4,4,4,2,2,2,2,3,2,4,2,2,2,4,1,4,3,0.920231165
+P379,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,4,3,3,3,5,4,5,4,4,3,4,5,4,5,5,4,5,5,2,3,2,2,3,5,4,2,4,2,3,2,2,1,4,5,1.183215957
+P380,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,3,5,4,5,5,5,1,4,5,3,5,4,2,5,2,1,3,5,1,5,5,4,5,2,3,4,5,1,5,5,4,5,5,1,4,1.475729575
+P381,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,2,5,5,5,5,5,4,5,5,4,4,3,5,5,5,4,5,5,2,5,4,5,5,5,5,5,3,2,4,4,5,5,5,4,5,0.937321412
+P382,,,,,,,,Gamificação estereótipo agressividade,3,2,3,2,4,4,3,2,3,2,4,3,2,5,2,2,3,4,2,3,2,2,3,3,2,2,3,2,2,4,2,3,4,2,3,3,0.831903535
+P383,25-34,,Masculino,,,,,Gamificação estereótipo agressividade,5,2,4,3,4,4,2,4,4,5,4,3,4,2,4,2,4,5,4,2,3,4,2,2,1,4,5,4,4,4,4,3,3,1,2,5,1.153325076
+P384,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,4,3,4,3,4,4,3,3,4,3,3,4,4,2,3,4,3,3,4,3,4,4,4,3,3,3,4,4,3,3,4,3,3,4,3,3,0.554204707
+P385,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,3,3,3,4,4,1,4,4,1,4,4,3,4,5,1,3,4,3,4,4,3,4,2,1,3,3,3,4,4,3,4,5,1,3,1.11661336
+P386,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,4,3,1,2,1,4,3,4,3,2,2,2,3,1,4,2,2,2,1,3,1,2,2,1,1,1,2,1,2,2,2,1,2,3,0.960737151
+P387,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,3,2,2,1,2,5,2,4,3,4,3,2,1,2,5,1,2,3,1,4,5,2,3,2,2,4,3,2,2,4,2,2,3,1,2,3,1.153325076
+P388,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,4,4,5,4,5,2,3,4,4,4,4,4,4,4,3,3,4,1,5,4,5,4,5,3,3,4,1,4,4,4,4,5,3,2,1.099422648
+P389,Mais de 55,,Feminino,,,,,Gamificação estereótipo agressividade,3,5,5,3,2,5,5,3,5,3,5,5,3,5,5,5,3,3,3,5,5,5,3,5,5,3,3,3,5,5,5,2,5,5,3,3,1.093995154
+P390,,,,,,,,Gamificação estereótipo agressividade,5,1,2,4,4,5,2,2,3,4,2,4,2,2,5,2,2,4,4,2,2,4,4,4,2,2,3,2,2,4,4,4,4,2,2,2,1.146423008
+P391,45-54,,Masculino,,,,,Gamificação estereótipo agressividade,4,2,4,4,5,4,5,3,4,2,4,5,4,4,4,5,2,3,4,5,5,5,4,4,5,4,3,4,4,5,4,4,5,5,3,2,0.940702203
+P392,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,5,1,5,4,5,5,5,3,4,5,4,5,4,4,5,4,3,4,5,1,5,5,4,4,2,3,4,5,2,5,5,4,4,4,3,4,1.121223821
+P393,18-24,,Masculino,,,,,Gamificação estereótipo agressividade,5,1,4,4,5,4,3,1,5,4,3,4,4,5,4,5,1,3,4,3,5,5,5,4,4,1,3,3,2,4,4,5,5,4,1,3,1.315354983
+P394,25-34,,Feminino,,,,,Gamificação estereótipo agressividade,4,1,4,4,4,4,2,4,5,4,4,4,4,1,4,2,3,4,4,1,4,4,4,4,4,4,4,4,1,3,4,4,4,2,2,4,1.105182596
+P395,35-44,,Feminino,,,,,Gamificação estereótipo agressividade,5,5,4,4,4,4,3,2,3,4,4,3,4,4,3,3,3,3,4,4,4,4,3,3,2,3,4,3,4,3,4,3,3,4,3,4,0.696362431
+P396,45-54,,Feminino,,,,,Gamificação estereótipo agressividade,3,2,3,3,4,3,1,4,2,3,4,1,2,4,2,1,4,1,2,3,2,2,3,3,2,4,2,3,2,2,2,3,3,2,3,2,0.908513525

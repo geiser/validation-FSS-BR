@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+Rscript -e "rmarkdown::render(input = 'script20220505.Rmd', output_dir = '../results', clean = TRUE, output_format = 'html_document')"
+Rscript -e "rmarkdown::render(input = 'script20220505.Rmd', output_dir = '../results', clean = TRUE, output_format = 'github_document')"
+Rscript script.R "$@"
+
+# The previous version of this file was commented-out and follows below:
+#
+# Rscript script.R "$@"
