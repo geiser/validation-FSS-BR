@@ -7,10 +7,6 @@ output:
     toc_depth: 3
     theme: default
     highlight: default
-  word_document: default
-  github_document:
-    toc: true
-    toc_depth: 3
   pdf_document:
     keep_tex: true
 fontsize: 10pt
@@ -173,7 +169,7 @@ fss <- select(fss, starts_with("Q"))
 (parameters::check_sphericity_bartlett(fss))
 ```
 
--   Obs: We didn't use *bartlett.test()* because it performs homogeneity of variances
+-   Obs: We didnt use *bartlett.test()* because it performs homogeneity of variances
 
 ### Performing Kaiser, Meyer, Olkin (KMO) based on Measure of Sampling Adequacy (MSA)
 
@@ -185,23 +181,22 @@ library(psych)
 ### Summarizing assumptions
 
 ```{r}
-df <- cbind(
-  sapply(colnames(fss), function(x) round(mean(fss[[x]]), digits = 3)),
-  sapply(colnames(fss), function(x) round(median(fss[[x]]), digits = 3)),
-  sapply(colnames(fss), function(x) round(sd(fss[[x]]), digits = 3)),
-  sapply(colnames(fss), function(x) round(skew(fss[[x]]), digits = 3)),
-  sapply(colnames(fss), function(x) round(kurtosi(fss[[x]]), digits = 3)),
-  sapply(colnames(fss), function(x) round(shapiro.test(fss[[x]])$statistic, digits = 3)),
-  sapply(colnames(fss), function(x) {
+df <- data.frame(item=colnames(fss))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(mean(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(median(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(sd(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(skew(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(kurtosi(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(shapiro.test(fss[[x]])$statistic, digits = 3)})))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) {
     p.val <- shapiro.test(fss[[x]])$p
     if (p.val < 0.001)
       return("< 0.001")
     else
       return(round(p.val, digits = 3))
-  }),
-  round(kmo_mod$MSAi, digits =3)
-)
-colnames(df) <- c("M","Mdn","SD","Skew","Kurtosis","W (statistic)","p.val","MSAi")
+  })))
+df <- cbind(df, as.vector(round(kmo_mod$MSAi, digits =3)))
+colnames(df) <- c("M","Mdn","SD","Skew","Kurtosis","statistic","p.val","MSAi")
 
 knitr::kable(df, digits = 3)
 ```
@@ -210,7 +205,7 @@ knitr::kable(df, digits = 3)
 
 ## Performing parallel factorial analysis
 
-```{r}
+```{r parallel-analisis}
 library(psych)
 (pfa_mod <- fa.parallel(fss, fm = 'wls', fa = 'fa', cor='poly', n.iter = 1, main = "", ylabel = "", plot = F))
 plot(pfa_mod)
@@ -298,7 +293,7 @@ standardizedsolution(fit4multi)
 fitMeasures(fit4multi)
 ```
 
-```{r fig4multi, fig.width=12, fig.height=12}
+```{r structure4longFSS, fig.width=12, fig.height=12}
 library(semPlot)
 semPlot::semPaths(
   fit4multi, "std", curvePivot = T, layout = "circle", rotation = 3,
@@ -391,7 +386,7 @@ standardizedSolution(fit4second)
 fitMeasures(fit4second)
 ```
 
-```{r fig4second, fig.width=12, fig.height=8}
+```{r structure4secondLongFSS, fig.width=12, fig.height=8}
 library(semPlot)
 semPlot::semPaths(
   fit4second, "std", curvePivot = T, layout = "tree", rotation = 1,
@@ -482,10 +477,10 @@ standardizedsolution(fit4multi31)
 fitMeasures(fit4multi31)
 ```
 
-```{r fig4multi31, fig.width=12, fig.height=12}
+```{r structure4altLongFSS, fig.width=12, fig.height=12}
 library(semPlot)
 semPlot::semPaths(
-  fit4multi, "std", curvePivot = T, layout = "circle", rotation = 3,
+  fit4multi31, "std", curvePivot = T, layout = "circle", rotation = 3,
   fade = T, intercepts = T, residuals = T, sizeLat = 4, sizeLat2 = 3, sizeMan = 4,
   esize = 1.5, asize = 1.5, edge.label.position = 0.55, levels = c(9.75,10,10,10))
 ```
@@ -575,7 +570,7 @@ standardizedSolution(fit4second31)
 fitMeasures(fit4second31)
 ```
 
-```{r fig4second31, fig.width=12, fig.height=8}
+```{r structure4alt2ndOrderLongFSS, fig.width=12, fig.height=8}
 library(semPlot)
 semPlot::semPaths(
   fit4second31, "std", curvePivot = T, layout = "tree", rotation = 1,
@@ -625,15 +620,15 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 ```
 
-```{r}
+```{r irt4longFSS2infotrace}
 plot(mirt4mult, type='infotrace')
 ```
 
-```{r}
+```{r irt4longFSS2info}
 plot(mirt4mult, type='info')
 ```
 
-```{r}
+```{r irt4longFSS2infoSE}
 plot(mirt4mult, type='infoSE')
 ```
 
@@ -651,7 +646,7 @@ standardizedSolution(fit4uni)
 fitMeasures(fit4uni)
 ```
 
-```{r fig4uni, fig.width=12, fig.height=12}
+```{r structure4originalShortFSS, fig.width=12, fig.height=12}
 library(semPlot)
 semPlot::semPaths(
   fit4uni, "std", curvePivot = T, layout = "circle",
@@ -681,7 +676,7 @@ standardizedSolution(fit4alt)
 fitMeasures(fit4alt)
 ```
 
-```{r fig4alt, fig.width=12, fig.height=12}
+```{r structure4altShortFSS, fig.width=12, fig.height=12}
 library(semPlot)
 semPlot::semPaths(
   fit4alt, "std", curvePivot = T, layout = "circle",
@@ -723,18 +718,14 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 ```
 
-```{r}
+```{r irt4shortFSS2infotrace}
 plot(mirt4alt, type='infotrace')
 ```
 
-```{r}
+```{r irt4shortFSS2info}
 plot(mirt4alt, type='info')
 ```
 
-```{r}
+```{r irt4shortFSS2infoSE}
 plot(mirt4alt, type='infoSE')
-```
-
-```
-knitr::purl("code/script20220505.Rmd", output="code/script.R", documentation = 2)
 ```
