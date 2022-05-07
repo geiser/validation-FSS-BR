@@ -7,8 +7,6 @@
 #'     toc_depth: 3
 #'     theme: default
 #'     highlight: default
-#'   pdf_document:
-#'     keep_tex: true
 #' fontsize: 10pt
 #' ---
 #' 
