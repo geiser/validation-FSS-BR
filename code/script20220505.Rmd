@@ -137,9 +137,11 @@ convergentDiscriminantValidity <- function(fit, lvn, dat, secondFactor = NULL) {
 #'
 #' @param fits a list of lavaan objects with CFA models
 #' @return fit indexes results of CFA models
-summariseFits <- function(fits) {
+summariseFits <- function(fits, indexes = c(
+  "chisq","df","gfi","agfi","cfi","tli","srmr",
+  "rmsea","rmsea.ci.lower","rmsea.ci.upper")) {
   df_fit <- do.call(rbind, lapply(fits, FUN = function(fit) {
-    dat <- as.list(round(fitMeasures(fit, c("chisq","df","gfi","agfi","cfi","tli","srmr","rmsea","rmsea.ci.lower","rmsea.ci.upper")), 3))
+    dat <- as.list(round(fitMeasures(fit,indexes), 3))
     rbind(c(dat[c("chisq","df")],"chisq/df"=round(dat$chisq/dat$df,3)
             , dat[c("gfi","agfi","cfi","tli","srmr","rmsea")]
             , "rmsea.ci" = paste0("[",dat$rmsea.ci.lower,"; ",dat$rmsea.ci.upper,"]")))
@@ -183,7 +185,7 @@ df <- data.frame(item=colnames(fss))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(mean(fss[[x]]), digits = 3) })))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(median(fss[[x]]), digits = 3) })))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(sd(fss[[x]]), digits = 3) })))
-df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(skew(fss[[x]]), digits = 3) })))
+df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(skew(fss[[x]])[[1]], digits = 3) })))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(kurtosi(fss[[x]]), digits = 3) })))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(shapiro.test(fss[[x]])$statistic, digits = 3)})))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) {
@@ -194,7 +196,7 @@ df <- cbind(df, as.vector(sapply(colnames(fss), function(x) {
       return(round(p.val, digits = 3))
   })))
 df <- cbind(df, as.vector(round(kmo_mod$MSAi, digits =3)))
-colnames(df) <- c("M","Mdn","SD","Skew","Kurtosis","statistic","p.val","MSAi")
+colnames(df) <- c("Item","M","Mdn","SD","Skew","Kurtosis","statistic","p.val","MSAi")
 
 knitr::kable(df, digits = 3)
 ```
@@ -229,6 +231,7 @@ We decided to use the mean and variance-adjusted weighted least squares (WLSMV) 
 
 ```{r}
 library(lavaan)
+library(semTools)
 
 mdl4multi <- '
 CSB =~ Q1 + Q10 + Q19 + Q28
@@ -286,12 +289,16 @@ LSC ~~ AE
 TT ~~ AE
 '
 
+fitMeasures(cfa(mdl4multi, data=fss), fit.measures = "all")
+
 fit4multi <- cfa(mdl4multi, data=fss, estimator="WLSMV", std.lv=T)
 standardizedsolution(fit4multi)
-fitMeasures(fit4multi)
+
+fitMeasures(fit4multi, fit.measures = "all")
+moreFitIndices(fit4multi, fit.measures = "all")
 ```
 
-```{r structure4longFSS, fig.width=12, fig.height=12}
+```{r structure4longFSS, fig.width=12, fig.height=12, dpi=600}
 library(semPlot)
 semPlot::semPaths(
   fit4multi, "std", curvePivot = T, layout = "circle", rotation = 3,
@@ -379,16 +386,21 @@ LSC ~~ 0*AE
 TT ~~ 0*AE
 '
 
+fitMeasures(cfa(mdl4second, data=fss), fit.measures = "all")
+
 fit4second <-cfa(mdl4second, data=fss, estimator="WLSMV", std.lv=T)
 standardizedSolution(fit4second)
-fitMeasures(fit4second)
+
+fitMeasures(fit4second, fit.measures = "all")
+moreFitIndices(fit4second, fit.measures = "all")
 ```
 
-```{r structure4secondLongFSS, fig.width=12, fig.height=8}
+```{r structure4secondLongFSS, fig.width=12, fig.height=8, dpi=600}
 library(semPlot)
 semPlot::semPaths(
   fit4second, "std", curvePivot = T, layout = "tree", rotation = 1,
-  fade = T, intercepts = T, residuals = T, esize = 1.5, asize = 1.5)
+  fade = T, intercepts = T, residuals = T, esize = 1.5, asize = 1.5,
+  sizeLat = 4, sizeMan = 2, sizeMan2 = 4, sizeInt = 6, sizeInt2 = 12)
 ```
 
 ### Internal consistency
@@ -407,197 +419,11 @@ knitr::kable(df, digits = 3)
 knitr::kable(df, digits = 3)
 ```
 
-## Multicorrelated nine factor model (31 itens and nine factors)
-
-### Structure validity
-
-```{r}
-library(lavaan)
-
-mdl4multi31 <- '
-CSB =~ Q1 + Q10 + Q19 + Q28
-MAA =~ Q2 + Q11 + Q20
-CG  =~ Q3 +       Q21 + Q30
-UF  =~ Q4 + Q13 + Q22 + Q31
-CTH =~ Q5 + Q14 + Q23 + Q32
-SC  =~      Q15 + Q24 + Q33
-LSC =~ Q7 + Q16 + Q25 + Q34
-TT  =~      Q17 + Q26 + Q35
-AE  =~      Q18 + Q27 + Q36
-
-CSB ~~ MAA
-CSB ~~ CG
-CSB ~~ UF
-CSB ~~ CTH
-CSB ~~ SC
-CSB ~~ LSC
-CSB ~~ TT
-CSB ~~ AE
-
-MAA ~~ CG
-MAA ~~ UF
-MAA ~~ CTH
-MAA ~~ SC
-MAA ~~ LSC
-MAA ~~ TT
-MAA ~~ AE
-
-CG ~~ UF
-CG ~~ CTH
-CG ~~ SC
-CG ~~ LSC
-CG ~~ TT
-CG ~~ AE
-
-UF ~~ CTH
-UF ~~ SC
-UF ~~ LSC
-UF ~~ TT
-UF ~~ AE
-
-CTH ~~ SC
-CTH ~~ LSC
-CTH ~~ TT
-CTH ~~ AE
-
-SC ~~ LSC
-SC ~~ TT
-SC ~~ AE
-
-LSC ~~ TT
-LSC ~~ AE
-
-TT ~~ AE
-'
-
-fit4multi31 <- cfa(mdl4multi31, data=fss, estimator="WLSMV", std.lv=T)
-standardizedsolution(fit4multi31)
-fitMeasures(fit4multi31)
-```
-
-```{r structure4altLongFSS, fig.width=12, fig.height=12}
-library(semPlot)
-semPlot::semPaths(
-  fit4multi31, "std", curvePivot = T, layout = "circle", rotation = 3,
-  fade = T, intercepts = T, residuals = T, sizeLat = 4, sizeLat2 = 3, sizeMan = 4,
-  esize = 1.5, asize = 1.5, edge.label.position = 0.55, levels = c(9.75,10,10,10))
-```
-
-### Internal consistency
-
-```{r}
-library(semTools)
-(df <- semTools::reliability(fit4multi31))
-knitr::kable(df, digits = 3)
-```
-
-### Convergent validity and discriminant validity
-
-```{r}
-(df <- convergentDiscriminantValidity(fit4multi31, mdl4multi31, fss))
-knitr::kable(df, digits = 3)
-```
-
-## Second order model (31 itens and 9 factors)
-
-### Structure validity
-
-```{r}
-library(lavaan)
-
-mdl4second31 <- '
-CSB =~ Q1 + Q10 + Q19 + Q28
-MAA =~ Q2 + Q11 + Q20
-CG  =~ Q3 +       Q21 + Q30
-UF  =~ Q4 + Q13 + Q22 + Q31
-CTH =~ Q5 + Q14 + Q23 + Q32
-SC  =~      Q15 + Q24 + Q33
-LSC =~ Q7 + Q16 + Q25 + Q34
-TT  =~      Q17 + Q26 + Q35
-AE  =~      Q18 + Q27 + Q36
-
-FSS  =~ CSB + MAA + CG + UF + CTH + SC + LSC + TT + AE
-
-CSB ~~ 0*MAA
-CSB ~~ 0*CG
-CSB ~~ 0*UF
-CSB ~~ 0*CTH
-CSB ~~ 0*SC
-CSB ~~ 0*LSC
-CSB ~~ 0*TT
-CSB ~~ 0*AE
-
-MAA ~~ 0*CG
-MAA ~~ 0*UF
-MAA ~~ 0*CTH
-MAA ~~ 0*SC
-MAA ~~ 0*LSC
-MAA ~~ 0*TT
-MAA ~~ 0*AE
-
-CG ~~ 0*UF
-CG ~~ 0*CTH
-CG ~~ 0*SC
-CG ~~ 0*LSC
-CG ~~ 0*TT
-CG ~~ 0*AE
-
-UF ~~ 0*CTH
-UF ~~ 0*SC
-UF ~~ 0*LSC
-UF ~~ 0*TT
-UF ~~ 0*AE
-
-CTH ~~ 0*SC
-CTH ~~ 0*LSC
-CTH ~~ 0*TT
-CTH ~~ 0*AE
-
-SC ~~ 0*LSC
-SC ~~ 0*TT
-SC ~~ 0*AE
-
-LSC ~~ 0*TT
-LSC ~~ 0*AE
-
-TT ~~ 0*AE
-'
-
-fit4second31 <-cfa(mdl4second31, data=fss, estimator="WLSMV", std.lv=T)
-standardizedSolution(fit4second31)
-fitMeasures(fit4second31)
-```
-
-```{r structure4alt2ndOrderLongFSS, fig.width=12, fig.height=8}
-library(semPlot)
-semPlot::semPaths(
-  fit4second31, "std", curvePivot = T, layout = "tree", rotation = 1,
-  fade = T, intercepts = T, residuals = T, esize = 1.5, asize = 1.5)
-```
-
-### Internal consistency
-
-```{r}
-library(semTools)
-semTools::reliabilityL2(fit4second31, "FSS")
-(df <- semTools::reliability(fit4second31, return.total = T))
-knitr::kable(df, digits = 3)
-```
-
-### Convergent validity and discriminant validity
-
-```{r}
-(df <- convergentDiscriminantValidity(fit4second31, mdl4second31, fss, "FSS"))
-knitr::kable(df, digits = 3)
-```
-
 ## Summarizing assessment model fits
 
 ```{r}
 (df <- summariseFits(list('9-multi model(36 items)'=fit4multi,
-                          '2nd-order model (36 items)'=fit4second,
-                          '9-multi model(31 items)'=fit4multi31,
-                          '2nd-order model (31 items)'=fit4second31)))
+                          '2nd-order model (36 items)'=fit4second)))
 knitr::kable(df, digits = 3)
 ```
 
@@ -618,15 +444,15 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 ```
 
-```{r irt4longFSS2infotrace}
+```{r irt4longFSS2infotrace, dpi=600}
 plot(mirt4mult, type='infotrace')
 ```
 
-```{r irt4longFSS2info}
+```{r irt4longFSS2info, dpi=600}
 plot(mirt4mult, type='info')
 ```
 
-```{r irt4longFSS2infoSE}
+```{r irt4longFSS2infoSE, dpi=600}
 plot(mirt4mult, type='infoSE')
 ```
 
@@ -638,13 +464,18 @@ plot(mirt4mult, type='infoSE')
 ```{r}
 library(lavaan)
 mdl4uni <- 'FSS =~ Q19 + Q29 + Q12 + Q22 + Q32 + Q6 + Q7 + Q17 + Q36'
+fss.df <- fss[,c("Q19","Q29","Q12","Q22","Q32","Q6","Q7","Q17","Q36")]
 
-fit4uni <-cfa(mdl4uni, data=fss[,c("Q19","Q29","Q12","Q22","Q32","Q6","Q7","Q17","Q36")], estimator="WLSMV", std.lv=T)
+fitMeasures(cfa(mdl4uni, fss.df), fit.measures = "all")
+
+fit4uni <- cfa(mdl4uni, data=fss.df, estimator="WLSMV", std.lv=T)
 standardizedSolution(fit4uni)
-fitMeasures(fit4uni)
+
+fitMeasures(fit4uni, fit.measures = "all")
+moreFitIndices(fit4uni)
 ```
 
-```{r structure4originalShortFSS, fig.width=12, fig.height=12}
+```{r structure4originalShortFSS, fig.width=12, fig.height=12, dpi=600}
 library(semPlot)
 semPlot::semPaths(
   fit4uni, "std", curvePivot = T, layout = "circle",
@@ -668,13 +499,18 @@ knitr::kable(df, digits = 3)
 ```{r}
 library(lavaan)
 mdl4alt <- 'FSS =~ Q10 + Q11 + Q30 + Q4 + Q23 + Q24 + Q7 + Q26 + Q27'
+fss.df <- fss[,c("Q10","Q11","Q30","Q4","Q23","Q24","Q7","Q26","Q27")]
 
-fit4alt <-cfa(mdl4alt, data=fss[,c("Q10","Q11","Q30","Q4","Q23","Q24","Q7","Q26","Q27")], estimator="WLSMV", std.lv=T)
+fitMeasures(cfa(mdl4alt, fss.df), fit.measures = "all")
+
+fit4alt <-cfa(mdl4alt, data=fss.df, estimator="WLSMV", std.lv=T)
 standardizedSolution(fit4alt)
-fitMeasures(fit4alt)
+
+fitMeasures(fit4alt, fit.measures = "all")
+moreFitIndices(fit4alt)
 ```
 
-```{r structure4altShortFSS, fig.width=12, fig.height=12}
+```{r structure4altShortFSS, fig.width=12, fig.height=12, dpi=600}
 library(semPlot)
 semPlot::semPaths(
   fit4alt, "std", curvePivot = T, layout = "circle",
@@ -716,14 +552,14 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 ```
 
-```{r irt4shortFSS2infotrace}
+```{r irt4shortFSS2infotrace, dpi=600}
 plot(mirt4alt, type='infotrace')
 ```
 
-```{r irt4shortFSS2info}
+```{r irt4shortFSS2info, dpi=600}
 plot(mirt4alt, type='info')
 ```
 
-```{r irt4shortFSS2infoSE}
+```{r irt4shortFSS2infoSE, dpi=600}
 plot(mirt4alt, type='infoSE')
 ```

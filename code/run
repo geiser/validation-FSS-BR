@@ -8,5 +8,6 @@ Rscript script.R "$@"
 # running to get R-script
 # 
 # knitr::purl("code/script20220505.Rmd", output="code/script.R", documentation = 2)
+# rmarkdown::render(input = 'code/script20220505.Rmd', output_dir = 'results', clean = TRUE, output_format = 'all', quiet=TRUE)
 # rmarkdown::render(input = 'code/script20220505.Rmd', output_dir = 'results', clean = TRUE, output_format = 'github_document')
 #
