@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-Rscript -e "rmarkdown::render(input = 'script20220505.Rmd', output_dir = '../results', clean = TRUE, output_format = 'all', quiet=TRUE)"
+
 Rscript script.R "$@"
 
 
@@ -11,3 +11,4 @@ Rscript script.R "$@"
 # rmarkdown::render(input = 'code/script20220505.Rmd', output_dir = 'results', clean = TRUE, output_format = 'all', quiet=TRUE)
 # rmarkdown::render(input = 'code/script20220505.Rmd', output_dir = 'results', clean = TRUE, output_format = 'github_document')
 #
+# Rscript -e "rmarkdown::render(input = 'script20220505.Rmd', output_dir = '../results', clean = TRUE, output_format = 'all', quiet=TRUE)"

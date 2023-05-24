@@ -1,7 +1,9 @@
 ---
 title: "Factor Analysis of FSS-BR"
-author: Hidden to avoid identification <hidden@example.com>
+author: Geiser Chalco Challco <geiser@alumni.usp.br>
 output:
+  github_document:
+    toc: true
   html_document: 
     toc: true
     toc_depth: 3
@@ -19,7 +21,7 @@ fontsize: 10pt
 ## Loading libs (packages)
 
 ```{r, message=FALSE}
-wants <- c('mirt','semPlot','semTools','psych','parameters','olsrr','lavaan','knitr','matrixStats','stats','dplyr','readr')
+wants <- c('mirt','semPlot','semTools','psych','parameters','latticeExtra','performance','olsrr','lavaan','knitr','matrixStats','stats','dplyr','readr')
 has <- wants %in% rownames(installed.packages())
 if (any(!has)) install.packages(wants[!has])
 ```
@@ -166,7 +168,7 @@ fss <- select(fss, starts_with("Q"))
 ### Performing Bartlett's test of sphericity
 
 ```{r}
-(parameters::check_sphericity_bartlett(fss))
+(performance::check_sphericity_bartlett(fss))
 ```
 
 -   Obs: We didnt use *bartlett.test()* because it performs homogeneity of variances
@@ -289,16 +291,13 @@ LSC ~~ AE
 TT ~~ AE
 '
 
-fitMeasures(cfa(mdl4multi, data=fss), fit.measures = "all")
-
 fit4multi <- cfa(mdl4multi, data=fss, estimator="WLSMV", std.lv=T)
 standardizedsolution(fit4multi)
 
 fitMeasures(fit4multi, fit.measures = "all")
-moreFitIndices(fit4multi, fit.measures = "all")
 ```
 
-```{r structure4longFSS, fig.width=12, fig.height=12, dpi=600}
+```{r structure4longFSS, fig.width=8, fig.height=8, dpi=300}
 library(semPlot)
 semPlot::semPaths(
   fit4multi, "std", curvePivot = T, layout = "circle", rotation = 3,
@@ -386,16 +385,13 @@ LSC ~~ 0*AE
 TT ~~ 0*AE
 '
 
-fitMeasures(cfa(mdl4second, data=fss), fit.measures = "all")
-
 fit4second <-cfa(mdl4second, data=fss, estimator="WLSMV", std.lv=T)
 standardizedSolution(fit4second)
 
 fitMeasures(fit4second, fit.measures = "all")
-moreFitIndices(fit4second, fit.measures = "all")
 ```
 
-```{r structure4secondLongFSS, fig.width=12, fig.height=8, dpi=600}
+```{r structure4secondLongFSS, fig.width=8, fig.height=6, dpi=300}
 library(semPlot)
 semPlot::semPaths(
   fit4second, "std", curvePivot = T, layout = "tree", rotation = 1,
@@ -510,7 +506,7 @@ fitMeasures(fit4alt, fit.measures = "all")
 moreFitIndices(fit4alt)
 ```
 
-```{r structure4altShortFSS, fig.width=12, fig.height=12, dpi=600}
+```{r structure4altShortFSS, fig.width=12, fig.height=12, dpi=300}
 library(semPlot)
 semPlot::semPaths(
   fit4alt, "std", curvePivot = T, layout = "circle",
@@ -552,14 +548,14 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 ```
 
-```{r irt4shortFSS2infotrace, dpi=600}
+```{r irt4shortFSS2infotrace, dpi=300}
 plot(mirt4alt, type='infotrace')
 ```
 
-```{r irt4shortFSS2info, dpi=600}
+```{r irt4shortFSS2info, dpi=300}
 plot(mirt4alt, type='info')
 ```
 
-```{r irt4shortFSS2infoSE, dpi=600}
+```{r irt4shortFSS2infoSE, dpi=300}
 plot(mirt4alt, type='infoSE')
 ```

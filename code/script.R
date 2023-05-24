@@ -1,7 +1,9 @@
 #' ---
 #' title: "Factor Analysis of FSS-BR"
-#' author: Hidden to avoid identification <hidden@example.com>
+#' author: Geiser Chalco Challco <geiser@alumni.usp.br>
 #' output:
+#'   github_document:
+#'     toc: true
 #'   html_document: 
 #'     toc: true
 #'     toc_depth: 3
@@ -18,15 +20,15 @@
 #' 
 #' ## Loading libs (packages)
 #' 
-## ---- message=FALSE-----------------------------------------------------------------------------
-wants <- c('mirt','semPlot','semTools','psych','parameters','olsrr','lavaan','knitr','matrixStats','stats','dplyr','readr')
+## ---- message=FALSE-----------------------------------------------------------------------------------------------------------------------
+wants <- c('mirt','semPlot','semTools','psych','parameters','latticeExtra','performance','olsrr','lavaan','knitr','matrixStats','stats','dplyr','readr')
 has <- wants %in% rownames(installed.packages())
 if (any(!has)) install.packages(wants[!has])
 
 #' 
 #' ## Loading internal functions
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 #' Calculate factors from cfa model
 #'
 #' This functions calculate composite reliability values of factors
@@ -47,7 +49,7 @@ getFactors <- function(fit, secondFactor = NULL) {
 }
 
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 #' Calculate composite reliability of factors
 #'
 #' This functions calculate composite reliability values of factors
@@ -74,7 +76,7 @@ compReliability <- function(fit, return.total = F) {
 }
 
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 #' Asessing convergent and discriminant validity
 #'
 #' This functions assess the discriminant and convergent validity of factors 
@@ -130,7 +132,7 @@ convergentDiscriminantValidity <- function(fit, lvn, dat, secondFactor = NULL) {
 }
 
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 #' Summarize fit indexes of CFA models
 #'
 #' This functions summarize fit indexes from CFA models
@@ -153,11 +155,11 @@ summariseFits <- function(fits, indexes = c(
 #' 
 #' ## Loading data
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(readr)
 library(dplyr)
 
-fss <- read.csv("../data/fss.csv")
+fss <- read.csv("data/fss.csv")
 fss <- select(fss, starts_with("Q"))
 
 #' 
@@ -165,22 +167,22 @@ fss <- select(fss, starts_with("Q"))
 #' 
 #' ### Performing Bartlett's test of sphericity
 #' 
-## -----------------------------------------------------------------------------------------------
-(parameters::check_sphericity_bartlett(fss))
+## -----------------------------------------------------------------------------------------------------------------------------------------
+(performance::check_sphericity_bartlett(fss))
 
 #' 
 #' -   Obs: We didnt use *bartlett.test()* because it performs homogeneity of variances
 #' 
 #' ### Performing Kaiser, Meyer, Olkin (KMO) based on Measure of Sampling Adequacy (MSA)
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(psych)
 (kmo_mod <- psych::KMO(fss)) 
 
 #' 
 #' ### Summarizing assumptions
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 df <- data.frame(item=colnames(fss))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(mean(fss[[x]]), digits = 3) })))
 df <- cbind(df, as.vector(sapply(colnames(fss), function(x) { round(median(fss[[x]]), digits = 3) })))
@@ -205,7 +207,7 @@ knitr::kable(df, digits = 3)
 #' 
 #' ## Performing parallel factorial analysis
 #' 
-## ----parallel-analisis--------------------------------------------------------------------------
+## ----parallel-analisis--------------------------------------------------------------------------------------------------------------------
 library(psych)
 (pfa_mod <- fa.parallel(fss, fm = 'wls', fa = 'fa', cor='poly', n.iter = 1, main = "", ylabel = "", plot = F))
 plot(pfa_mod)
@@ -213,7 +215,7 @@ plot(pfa_mod)
 #' 
 #' ## Running EFA with 9 factors
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 efa_mod <- fa(fss, nfactors = 9, cor = 'poly', fm = 'wls')
 print(loadings(fa.sort(efa_mod)), cutoff = 0.3)
 
@@ -229,7 +231,7 @@ print(loadings(fa.sort(efa_mod)), cutoff = 0.3)
 #' 
 #' ### Structure validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(lavaan)
 library(semTools)
 
@@ -289,16 +291,13 @@ LSC ~~ AE
 TT ~~ AE
 '
 
-fitMeasures(cfa(mdl4multi, data=fss), fit.measures = "all")
-
 fit4multi <- cfa(mdl4multi, data=fss, estimator="WLSMV", std.lv=T)
 standardizedsolution(fit4multi)
 
 fitMeasures(fit4multi, fit.measures = "all")
-moreFitIndices(fit4multi, fit.measures = "all")
 
 #' 
-## ----structure4longFSS, fig.width=12, fig.height=12, dpi=600------------------------------------
+## ----structure4longFSS, fig.width=8, fig.height=8, dpi=300--------------------------------------------------------------------------------
 library(semPlot)
 semPlot::semPaths(
   fit4multi, "std", curvePivot = T, layout = "circle", rotation = 3,
@@ -308,7 +307,7 @@ semPlot::semPaths(
 #' 
 #' ### Internal consistency
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(semTools)
 (df <- semTools::reliability(fit4multi))
 knitr::kable(df, digits = 3)
@@ -316,7 +315,7 @@ knitr::kable(df, digits = 3)
 #' 
 #' ### Convergent validity and discriminant validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 (df <- convergentDiscriminantValidity(fit4multi, mdl4multi, fss))
 knitr::kable(df, digits = 3)
 
@@ -325,7 +324,7 @@ knitr::kable(df, digits = 3)
 #' 
 #' ### Structure validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(lavaan)
 
 mdl4second <- '
@@ -386,16 +385,13 @@ LSC ~~ 0*AE
 TT ~~ 0*AE
 '
 
-fitMeasures(cfa(mdl4second, data=fss), fit.measures = "all")
-
 fit4second <-cfa(mdl4second, data=fss, estimator="WLSMV", std.lv=T)
 standardizedSolution(fit4second)
 
 fitMeasures(fit4second, fit.measures = "all")
-moreFitIndices(fit4second, fit.measures = "all")
 
 #' 
-## ----structure4secondLongFSS, fig.width=12, fig.height=8, dpi=600-------------------------------
+## ----structure4secondLongFSS, fig.width=8, fig.height=6, dpi=300--------------------------------------------------------------------------
 library(semPlot)
 semPlot::semPaths(
   fit4second, "std", curvePivot = T, layout = "tree", rotation = 1,
@@ -405,7 +401,7 @@ semPlot::semPaths(
 #' 
 #' ### Internal consistency
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(semTools)
 semTools::reliabilityL2(fit4second, "FSS")
 (df <- semTools::reliability(fit4second, return.total = T))
@@ -414,14 +410,14 @@ knitr::kable(df, digits = 3)
 #' 
 #' ### Convergent validity and discriminant validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 (df <- convergentDiscriminantValidity(fit4second, mdl4second, fss, "FSS"))
 knitr::kable(df, digits = 3)
 
 #' 
 #' ## Summarizing assessment model fits
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 (df <- summariseFits(list('9-multi model(36 items)'=fit4multi,
                           '2nd-order model (36 items)'=fit4second)))
 knitr::kable(df, digits = 3)
@@ -429,13 +425,13 @@ knitr::kable(df, digits = 3)
 #' 
 #' ## IRT on the FSS-BR (36 itens and 9 factors - original version)
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(mirt)
 mirt4mult <- mirt(fss, 1, itemtype='graded')
 (param4mult <- coef(mirt4mult, simplify=T, IRTpars=T))
 
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(matrixStats)
 df <- data.frame(param4mult$items)
 df <- cbind(df, bx = matrixStats::rowMeans2(as.matrix(df), cols = c(2,3,4,5)))
@@ -444,15 +440,15 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 
 #' 
-## ----irt4longFSS2infotrace, dpi=600-------------------------------------------------------------
+## ----irt4longFSS2infotrace, dpi=600-------------------------------------------------------------------------------------------------------
 plot(mirt4mult, type='infotrace')
 
 #' 
-## ----irt4longFSS2info, dpi=600------------------------------------------------------------------
+## ----irt4longFSS2info, dpi=600------------------------------------------------------------------------------------------------------------
 plot(mirt4mult, type='info')
 
 #' 
-## ----irt4longFSS2infoSE, dpi=600----------------------------------------------------------------
+## ----irt4longFSS2infoSE, dpi=600----------------------------------------------------------------------------------------------------------
 plot(mirt4mult, type='infoSE')
 
 #' 
@@ -461,7 +457,7 @@ plot(mirt4mult, type='infoSE')
 #' 
 #' ### Structure validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(lavaan)
 mdl4uni <- 'FSS =~ Q19 + Q29 + Q12 + Q22 + Q32 + Q6 + Q7 + Q17 + Q36'
 fss.df <- fss[,c("Q19","Q29","Q12","Q22","Q32","Q6","Q7","Q17","Q36")]
@@ -475,7 +471,7 @@ fitMeasures(fit4uni, fit.measures = "all")
 moreFitIndices(fit4uni)
 
 #' 
-## ----structure4originalShortFSS, fig.width=12, fig.height=12, dpi=600---------------------------
+## ----structure4originalShortFSS, fig.width=12, fig.height=12, dpi=600---------------------------------------------------------------------
 library(semPlot)
 semPlot::semPaths(
   fit4uni, "std", curvePivot = T, layout = "circle",
@@ -486,7 +482,7 @@ semPlot::semPaths(
 #' 
 #' ### Internal consistency
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(semTools)
 (df <- semTools::reliability(fit4uni))
 knitr::kable(df, digits = 3)
@@ -496,7 +492,7 @@ knitr::kable(df, digits = 3)
 #' 
 #' ### Structure validity
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(lavaan)
 mdl4alt <- 'FSS =~ Q10 + Q11 + Q30 + Q4 + Q23 + Q24 + Q7 + Q26 + Q27'
 fss.df <- fss[,c("Q10","Q11","Q30","Q4","Q23","Q24","Q7","Q26","Q27")]
@@ -510,7 +506,7 @@ fitMeasures(fit4alt, fit.measures = "all")
 moreFitIndices(fit4alt)
 
 #' 
-## ----structure4altShortFSS, fig.width=12, fig.height=12, dpi=600--------------------------------
+## ----structure4altShortFSS, fig.width=12, fig.height=12, dpi=300--------------------------------------------------------------------------
 library(semPlot)
 semPlot::semPaths(
   fit4alt, "std", curvePivot = T, layout = "circle",
@@ -521,7 +517,7 @@ semPlot::semPaths(
 #' 
 #' ### Internal consistency
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(semTools)
 (df <- semTools::reliability(fit4alt))
 knitr::kable(df, digits = 3)
@@ -529,21 +525,21 @@ knitr::kable(df, digits = 3)
 #' 
 #' ## Summarizing assessment model fits in short-versions
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 df <- summariseFits(list('uni model'=fit4uni, 'alt model'=fit4alt))
 knitr::kable(df, digits = 3)
 
 #' 
 #' ## IRT on the FSS-short version (9 itens - alternative version)
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(mirt)
 mirt4alt <- mirt(fss[,c("Q10","Q11","Q30","Q4","Q23","Q24","Q7","Q26","Q27")],
                  1, itemtype='graded')
 param4alt <- coef(mirt4alt, simplify=T, IRTpars=T)
 
 #' 
-## -----------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------------------------------------------------------------
 library(matrixStats)
 df <- data.frame(param4alt$items)
 df <- cbind(df, bx = matrixStats::rowMeans2(as.matrix(df), cols = c(2,3,4,5)))
@@ -552,14 +548,14 @@ df <- rbind(df, SD = matrixStats::colSds(as.matrix(df)))
 knitr::kable(df, digits = 3)
 
 #' 
-## ----irt4shortFSS2infotrace, dpi=600------------------------------------------------------------
+## ----irt4shortFSS2infotrace, dpi=300------------------------------------------------------------------------------------------------------
 plot(mirt4alt, type='infotrace')
 
 #' 
-## ----irt4shortFSS2info, dpi=600-----------------------------------------------------------------
+## ----irt4shortFSS2info, dpi=300-----------------------------------------------------------------------------------------------------------
 plot(mirt4alt, type='info')
 
 #' 
-## ----irt4shortFSS2infoSE, dpi=600---------------------------------------------------------------
+## ----irt4shortFSS2infoSE, dpi=300---------------------------------------------------------------------------------------------------------
 plot(mirt4alt, type='infoSE')
 

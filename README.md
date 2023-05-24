@@ -7,5 +7,4 @@ Validation of the FSS-BR
  - Data-set as Excel file: [data/fss.xlsx](data/fss.xlsx)
 
  - Results from the R-script as markdown: [results/script20220505.md](results/script20220505.md)
- - Results from the R-script as html: [results/script20220505.html](results/script20220505.html)
  
